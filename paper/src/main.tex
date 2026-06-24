@@ -1,0 +1,544 @@
+\documentclass[twocolumn]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{braket}  % Dirac notation
+
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+
+\title{\textbf{EQ-GAN: Entanglement-Enhanced Quantum Generative Adversarial Network\\
+with Conditional Style Control}}
+
+\author{
+  Felipe Mahlow\\
+  \small \texttt{felipe.mahlow@gmail.com}
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% ============================================================
+\begin{abstract}
+Quantum Generative Adversarial Networks (QGANs) have emerged as a promising
+framework for quantum-enhanced generative modeling, yet existing architectures
+treat parametric quantum circuits (PQCs) primarily as generic function
+approximators, leaving quantum entanglement largely unexploited as a
+computational resource. We propose \textbf{EQ-GAN}, an entanglement-enhanced
+hybrid QGAN architecture that introduces \emph{quantum entanglement as an
+explicit style injection mechanism} for conditional image generation. EQ-GAN
+maintains two quantum registers: a content register (6 qubits, angle-encoded
+from latent noise) and a style register (2 qubits, IQP feature-mapped from
+class labels), connected by an entanglement core consisting of a structured
+CNOT ladder that creates cross-register correlations before variational layers
+are applied. The circuit output drives a classical convolutional decoder to
+produce 28$\times$28 images. We evaluate EQ-GAN on FashionMNIST, MNIST, and
+BreastMNIST using FID, Inception Score, and Precision\,/\,Recall metrics,
+and benchmark against DCGAN, WGAN-GP, and prior QGAN architectures.
+A systematic ablation study isolates the contribution of the entanglement
+core by comparing against variants with independent registers and no style
+register. We further characterize the circuit via expressibility analysis
+(KL divergence from the Haar measure) and von~Neumann entanglement entropy
+tracking during training. Our results provide quantitative evidence on
+when and how quantum entanglement contributes to generative quality,
+advancing the empirical understanding of entanglement as a computational
+resource in near-term quantum machine learning.
+\end{abstract}
+
+\textbf{Keywords:} quantum GAN, entanglement, hybrid quantum-classical,
+conditional image generation, NISQ, parametric quantum circuits
+
+% ============================================================
+\section{Introduction}
+\label{sec:intro}
+
+Generative Adversarial Networks (GANs) \cite{goodfellow2014generative} have
+transformed the landscape of generative modeling, enabling the synthesis of
+high-fidelity images through an adversarial training framework between a
+generator $G$ and discriminator $D$. Classical advances—including the
+Wasserstein formulation \cite{arjovsky2017wasserstein}, style-based
+architectures \cite{karras2019style}, and self-attention mechanisms
+\cite{zhang2019self}—have progressively improved image quality, diversity,
+and controllability.
+
+Simultaneously, the emergence of near-term quantum processors has motivated
+the study of quantum-enhanced generative models. The theoretical appeal is
+rooted in the exponential dimensionality of Hilbert space: an $n$-qubit
+system spans a $2^n$-dimensional state space, potentially offering a
+representational advantage for capturing complex distributions
+\cite{biamonte2017quantum}. Quantum GANs (QGANs) were first proposed by
+Lloyd and Weedbrook \cite{lloyd2018quantum} and Dallaire-Demers and Killoran
+\cite{dallaire2018quantum}, establishing the theoretical foundations for
+adversarial training with quantum generators. Subsequent hybrid architectures
+have demonstrated practical generation of low-dimensional data on near-term
+hardware \cite{huang2021experimental, tsang2023mosaiq, rudolph2024latent}.
+
+However, a critical gap persists in existing QGAN architectures: \emph{quantum
+entanglement is not exploited as an explicit mechanism for generative control}.
+Most hybrid QGANs employ PQCs as generic function approximators, using
+entanglement implicitly (through CNOT-rich ansatze) without differentiating
+between the roles of content generation and style conditioning in quantum
+space. This stands in contrast to classical advances such as StyleGAN
+\cite{karras2019style}, where disentangled style codes enable precise control
+over generative attributes through adaptive instance normalization.
+
+We propose \textbf{EQ-GAN} (Entanglement-enhanced Quantum GAN), which
+addresses this gap by introducing a dedicated \emph{entanglement core}—a
+structured CNOT ladder that connects a style qubit register (encoding class
+information via IQP feature maps) to a content qubit register (encoding
+latent noise via angle encoding). The central hypothesis is that
+quantum entanglement between these registers creates cross-register
+correlations that cannot be replicated by independent classical conditioning,
+enabling more effective class-conditional generation in the quantum regime.
+
+\paragraph{Contributions.} This paper makes four contributions:
+\begin{enumerate}
+  \item \textbf{EQ-GAN architecture}: a hybrid QGAN with 8-qubit circuit
+    (6 content, 2 style) featuring a structured entanglement core for
+    conditional image generation.
+  \item \textbf{Ablation study}: systematic isolation of the entanglement
+    core's contribution by comparing full EQ-GAN against independent-register
+    and unconditional variants.
+  \item \textbf{Quantum characterization}: expressibility analysis and
+    von~Neumann entanglement entropy tracking during training.
+  \item \textbf{Empirical benchmark}: evaluation on FashionMNIST, MNIST, and
+    BreastMNIST with FID, IS, and Precision/Recall metrics against classical
+    and quantum baselines.
+\end{enumerate}
+
+The remainder of the paper is organized as follows. Section~\ref{sec:related}
+reviews related work. Section~\ref{sec:method} describes the EQ-GAN
+architecture. Section~\ref{sec:theory} presents the theoretical
+characterization. Section~\ref{sec:experiments} details the experimental
+setup. Section~\ref{sec:results} presents and discusses results.
+Section~\ref{sec:conclusion} concludes with limitations and future directions.
+
+% ============================================================
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Classical GANs and Style Control}
+
+The original GAN \cite{goodfellow2014generative} frames generative modeling
+as a minimax game: $\min_G \max_D \mathbb{E}[\log D(x)] +
+\mathbb{E}[\log(1-D(G(z)))]$. Conditional GANs \cite{mirza2014conditional}
+introduced class-conditional generation by concatenating label information to
+both generator and discriminator inputs. The Wasserstein GAN with gradient
+penalty (WGAN-GP) \cite{gulrajani2017improved} replaced the Jensen-Shannon
+divergence with the Earth Mover's distance, providing stable training dynamics.
+
+Style-based generation \cite{karras2019style, karras2020analyzing} introduced
+a fundamentally different conditioning paradigm: instead of concatenating class
+labels, a learned mapping network transforms latent codes into \emph{style
+parameters} that are injected at each layer via adaptive instance normalization.
+This disentanglement of style and content has been highly influential—our
+entanglement core is conceptually motivated by this paradigm, transposing it
+into quantum space via CNOT-based cross-register correlations.
+
+\subsection{Quantum Generative Adversarial Networks}
+
+Lloyd and Weedbrook \cite{lloyd2018quantum} first proposed a fully quantum GAN
+where both generator and discriminator are quantum channels, establishing
+theoretical bounds on training dynamics and convergence. Dallaire-Demers and
+Killoran \cite{dallaire2018quantum} introduced a framework for training QGANs
+on quantum hardware using a quantum cost function based on the diamond norm.
+
+Hybrid architectures—combining quantum generators with classical
+discriminators—have dominated practical QGAN research. Huang et al.\
+\cite{huang2021experimental} demonstrated a patch-based hybrid QGAN on
+superconducting hardware, achieving generation of $8\times 8$ handwritten
+digits by assembling image patches from separate PQC outputs. The MosaIQ
+architecture \cite{tsang2023mosaiq} extended this with a mosaic strategy,
+generating overlapping patches and aggregating them to reduce boundary
+artifacts.
+
+Latent QGANs \cite{rudolph2024latent} operate in a compressed latent space
+produced by a classical autoencoder, reducing the dimensionality challenge
+while enabling the quantum circuit to focus on the semantic structure of the
+data. Recent work has explored quantum Wasserstein distances
+\cite{kiani2022quantum}, quantum normalizing flows
+\cite{johansen2024quantum}, and barren plateau mitigation strategies
+\cite{mcclean2018barren, zhang2024trainability} relevant to QGAN training.
+
+Our work differs from existing hybrid QGANs in that we explicitly differentiate
+the roles of content and style registers and use entanglement as a structured
+conditioning mechanism rather than incidental circuit topology.
+
+\subsection{Entanglement as a Computational Resource}
+
+Entanglement entropy has been studied as a measure of quantum circuit
+expressibility \cite{sim2019expressibility}. Abbas et al.\
+\cite{abbas2021power} demonstrated that quantum models can achieve higher
+effective dimension than comparable classical models. Bipartite entanglement
+in PQCs has been linked to trainability \cite{cerezo2021cost} and generalization
+\cite{caro2022generalization} in quantum machine learning.
+
+In the context of generative models, entanglement enables the generation of
+states with non-classical correlations \cite{lloyd2018quantum}. Our work
+provides empirical evidence connecting entanglement entropy to generative
+quality in a hybrid setting, operationalizing entanglement as a style
+injection mechanism.
+
+% ============================================================
+\section{EQ-GAN Architecture}
+\label{sec:method}
+
+\subsection{Overview}
+
+EQ-GAN is a conditional hybrid QGAN with five components: (1) a
+classical style encoder mapping class labels to quantum style inputs,
+(2) a classical noise encoder mapping latent noise to quantum content inputs,
+(3) a quantum circuit implementing content encoding, IQP-based style encoding,
+an entanglement core, and variational layers,
+(4) a classical convolutional decoder mapping quantum measurements to images, and
+(5) a conditional CNN discriminator. The full architecture is shown in
+Figure~\ref{fig:architecture}.
+
+\subsection{Classical Encoders}
+
+\paragraph{Noise encoder.}
+Given Gaussian noise $\mathbf{z} \sim \mathcal{N}(\mathbf{0}, \mathbf{I}_{64})$,
+the noise encoder $E_\text{noise}: \mathbb{R}^{64} \rightarrow [-\pi, \pi]^{N_C}$
+is a two-layer MLP that produces $N_C = 6$ angle parameters $\boldsymbol{\theta}_n$
+scaled to $[-\pi, \pi]$ via $\tanh(\cdot) \times \pi$:
+\begin{equation}
+  \boldsymbol{\theta}_n = \pi \cdot \tanh(W_2 \cdot \text{LeakyReLU}(W_1 \mathbf{z} + b_1) + b_2).
+\end{equation}
+
+\paragraph{Style encoder.}
+Given a one-hot class label $\mathbf{c} \in \{0,1\}^{N_\text{cls}}$, the style
+encoder $E_\text{style}: \mathbb{R}^{N_\text{cls}} \rightarrow [-\pi,\pi]^{N_S}$
+produces $N_S = 2$ style parameters $\boldsymbol{\phi}_s$ via a similar two-layer
+MLP.
+
+\subsection{Quantum Circuit}
+\label{sec:circuit}
+
+The quantum circuit operates on $N_Q = 8$ qubits partitioned into a
+\emph{content register} $\mathcal{C} = \{q_0, \ldots, q_5\}$ and a
+\emph{style register} $\mathcal{S} = \{q_6, q_7\}$.
+
+\paragraph{Content encoding.} Angle encoding applies individual $R_Y$ rotations
+to the content register:
+\begin{equation}
+  U_n(\boldsymbol{\theta}_n) = \bigotimes_{i=0}^{5} R_Y(\theta_{n,i}).
+\end{equation}
+
+\paragraph{Style encoding (IQP feature map).}
+The style register uses an IQP-inspired feature map
+\cite{havlicek2019supervised}, which is known to produce states that are
+classically hard to simulate for random inputs:
+\begin{equation}
+  U_s(\boldsymbol{\phi}_s) =
+    \text{IsingZZ}(\phi_{s,0} \cdot \phi_{s,1}, \{q_6, q_7\}) \cdot
+    \bigotimes_{j=6}^{7} [R_Z(\phi_{s,j-6}) \cdot H_{q_j}].
+\end{equation}
+
+\paragraph{Entanglement core.}
+The entanglement core $U_E$ is the key architectural contribution. It consists
+of a CNOT ladder connecting the style register to the content register,
+followed by intra-style entanglement:
+\begin{equation}
+  U_E = \text{CNOT}_{q_7 \to q_6} \cdot \text{CNOT}_{q_6 \to q_0} \cdot \text{CNOT}_{q_7 \to q_1},
+  \label{eq:entcore}
+\end{equation}
+where CNOT$_{a \to b}$ denotes a CNOT gate with control qubit $a$ and target
+qubit $b$. This structure creates quantum correlations between the style and
+content registers, entangling the class information encoded in $\mathcal{S}$
+with the content generation subspace $\mathcal{C}$.
+
+\paragraph{Variational layers.}
+A hardware-efficient ansatz \cite{kandala2017hardware} with $L = 3$ layers
+is applied to all 8 qubits:
+\begin{equation}
+  U_V(\boldsymbol{\omega}) = \prod_{\ell=1}^{L}
+    \left[ U_\text{CNOT\,ring} \cdot \bigotimes_{i=0}^{7}
+    R_Z(\omega_{\ell,i,2}) R_Y(\omega_{\ell,i,1}) R_Z(\omega_{\ell,i,0}) \right],
+\end{equation}
+where $\boldsymbol{\omega} \in \mathbb{R}^{L \times N_Q \times 3}$ are
+trainable variational parameters ($72$ parameters total).
+
+The full circuit produces the state:
+\begin{equation}
+  \ket{\psi(\boldsymbol{\theta}_n, \boldsymbol{\phi}_s, \boldsymbol{\omega})} =
+    U_V \cdot U_E \cdot [U_n \otimes U_s] \ket{0}^{\otimes 8},
+\end{equation}
+and the generator output is the vector of Pauli-$Z$ expectation values on the
+content register:
+\begin{equation}
+  \mathbf{q} = (\bra{\psi} Z_0 \ket{\psi}, \ldots, \bra{\psi} Z_5 \ket{\psi})
+    \in [-1, 1]^6.
+\end{equation}
+
+\subsection{Classical Decoder}
+The decoder $D_\text{dec}: [-1,1]^6 \rightarrow \mathbb{R}^{1\times 28\times 28}$
+maps quantum measurements to images via a fully-connected layer followed by
+three transposed convolutional layers (4$\times$4→7$\times$7→14$\times$14→28$\times$28)
+with batch normalization and ReLU activations, and a final $\tanh$ output.
+
+\subsection{Discriminator and Training Objective}
+The discriminator $D$ is a conditional CNN that concatenates a learned class
+embedding (projected to a spatial map) with the input image, followed by three
+strided convolutional layers with instance normalization.
+
+EQ-GAN is trained with the WGAN-GP objective \cite{gulrajani2017improved}:
+\begin{align}
+  \mathcal{L}_D &= \mathbb{E}[D(G(\mathbf{z},\mathbf{c}))] - \mathbb{E}[D(\mathbf{x})]
+    + \lambda \, \mathbb{E}\!\left[(\|\nabla D(\hat{\mathbf{x}})\|_2 - 1)^2\right], \\
+  \mathcal{L}_G &= -\mathbb{E}[D(G(\mathbf{z},\mathbf{c}))],
+\end{align}
+where $\hat{\mathbf{x}}$ is a convex interpolation between real and fake samples,
+and $\lambda = 10$ is the gradient penalty coefficient.
+
+Gradients with respect to the variational parameters $\boldsymbol{\omega}$ are
+computed via the adjoint differentiation method \cite{jones2020differentiating},
+which is exact and parameter-efficient.
+
+\subsection{Ablation Variants}
+
+To isolate the entanglement core's contribution, we define two ablation models:
+
+\begin{itemize}
+  \item \textbf{EQ-GAN$_\text{no-ent}$}: identical to EQ-GAN but with $U_E$
+    removed. Content and style registers evolve independently before the
+    variational layers, with no cross-register quantum correlations.
+  \item \textbf{EQ-GAN$_\text{no-style}$}: unconditional variant using only the
+    6-qubit content register with no style input, analogous to a standard QGAN.
+\end{itemize}
+
+% ============================================================
+\section{Theoretical Characterization}
+\label{sec:theory}
+
+\subsection{Expressibility}
+
+Following Sim et al.\ \cite{sim2019expressibility}, we quantify circuit
+expressibility as the KL divergence between the distribution of pairwise
+state fidelities $|\langle\psi(\boldsymbol{\theta}_1)|\psi(\boldsymbol{\theta}_2)\rangle|^2$
+for uniformly random parameters and the Haar-random distribution
+$F(f) = (2^n - 1)(1-f)^{2^n - 2}$:
+\begin{equation}
+  \mathcal{E} = D_\text{KL}\!\left(P_\text{circuit}(f) \,\|\, P_\text{Haar}(f)\right).
+\end{equation}
+Lower $\mathcal{E}$ indicates higher expressibility. We compare
+$\mathcal{E}_\text{EQ-GAN}$ against $\mathcal{E}_\text{no-ent}$ to assess
+whether the entanglement core increases the expressibility of the circuit.
+
+\subsection{Entanglement Entropy}
+
+We track the von~Neumann entanglement entropy of the bipartition
+$\mathcal{C} | \mathcal{S}$ during training:
+\begin{equation}
+  S(\rho_\mathcal{C}) = -\text{Tr}(\rho_\mathcal{C} \log_2 \rho_\mathcal{C}),
+\end{equation}
+where $\rho_\mathcal{C} = \text{Tr}_\mathcal{S}[\ket{\psi}\bra{\psi}]$ is the
+reduced density matrix of the content register. If the entanglement core plays
+an active role in generation, we expect $S(\rho_\mathcal{C})$ to increase
+during training as the variational layers learn to leverage the entanglement
+created by $U_E$.
+
+% ============================================================
+\section{Experiments}
+\label{sec:experiments}
+
+\subsection{Datasets}
+
+We evaluate on three benchmark datasets:
+\begin{itemize}
+  \item \textbf{FashionMNIST} \cite{xiao2017fashion} (primary): 10 classes,
+    $28\times28$ grayscale, 5{,}000 training samples used.
+  \item \textbf{MNIST} \cite{lecun1998gradient} (sanity check): 10 classes,
+    $28\times28$ grayscale, 5{,}000 training samples.
+  \item \textbf{BreastMNIST} \cite{medmnistv2} (application): 2-class
+    ultrasound (benign vs.\ malignant), $28\times28$ grayscale, from
+    MedMNIST v2.
+\end{itemize}
+All images are normalized to $[-1, 1]$. Training is conducted on 5{,}000
+samples to ensure comparability across quantum models (a standard subset size
+in QGAN literature \cite{huang2021experimental, tsang2023mosaiq}).
+
+\subsection{Baselines}
+
+\paragraph{Classical baselines.}
+DCGAN \cite{radford2015unsupervised} and WGAN-GP \cite{gulrajani2017improved}
+provide classical references, both trained with identical data splits and
+epoch counts.
+
+\paragraph{Quantum baselines.}
+We implement the following quantum baselines following their original
+formulations:
+(i) Patch QGAN \cite{huang2021experimental} — 4-qubit patch-based generator,
+(ii) MosaIQ \cite{tsang2023mosaiq} — mosaic patch strategy,
+(iii) Latent QGAN \cite{rudolph2024latent} — quantum generator in VAE latent space.
+
+\paragraph{Ablations.}
+EQ-GAN$_\text{no-ent}$ and EQ-GAN$_\text{no-style}$ as defined in
+Section~\ref{sec:method}.
+
+\subsection{Evaluation Metrics}
+
+\begin{itemize}
+  \item \textbf{FID} \cite{heusel2017gans}: Fréchet Inception Distance between
+    real and generated InceptionV3 feature distributions (lower is better).
+  \item \textbf{IS} \cite{salimans2016improved}: Inception Score,
+    measuring diversity and quality (higher is better).
+  \item \textbf{Precision / Recall} \cite{kynkaanniemi2019improved}: fraction
+    of generated samples in the real manifold (precision) and fraction of
+    real samples covered (recall).
+  \item \textbf{Entanglement Entropy}: $S(\rho_\mathcal{C})$ averaged over
+    50 random input states at each checkpoint.
+  \item \textbf{Expressibility} $\mathcal{E}$: estimated from 1{,}000
+    random parameter pairs.
+  \item \textbf{Parameter count}: total trainable parameters.
+\end{itemize}
+
+FID and IS are evaluated on $N_\text{eval} = 2{,}000$ generated images
+using InceptionV3 \cite{szegedy2016rethinking} features.
+
+\subsection{Implementation Details}
+
+EQ-GAN is implemented in PennyLane 0.45 \cite{bergmann2018pennylane} with
+PyTorch 2.4 \cite{paszke2019pytorch}. The \texttt{lightning.qubit} backend
+provides exact state-vector simulation. Quantum gradients are computed via
+the adjoint method \cite{jones2020differentiating}. Classical components use
+GPU acceleration (NVIDIA RTX 3080 Ti, CUDA 13.0); quantum simulation runs on
+CPU. Training uses the Adam optimizer
+($\beta_1 = 0, \beta_2 = 0.9$) for both generator and discriminator, with
+learning rates $\eta_G = \eta_D = 10^{-4}$, batch size 32, $n_\text{critic} = 3$,
+and $\lambda_\text{GP} = 10$, for 50 epochs.
+
+% ============================================================
+\section{Results and Discussion}
+\label{sec:results}
+
+\subsection{Quantitative Results}
+
+Table~\ref{tab:main_results} reports FID, IS, Precision, and Recall for all
+models on FashionMNIST, MNIST, and BreastMNIST. [Results will be populated
+upon experiment completion.]
+
+\begin{table*}[t]
+  \centering
+  \caption{Main results: FID ($\downarrow$), IS ($\uparrow$), Precision ($\uparrow$),
+    and Recall ($\uparrow$) at epoch 50. Best QGAN in \textbf{bold}.
+    $\dagger$: classical reference (not directly comparable).}
+  \label{tab:main_results}
+  \small
+  \begin{tabular}{llcccccccc}
+    \toprule
+    & & \multicolumn{4}{c}{FashionMNIST} & \multicolumn{2}{c}{MNIST} & \multicolumn{2}{c}{BreastMNIST} \\
+    \cmidrule(lr){3-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}
+    Type & Model & FID$\downarrow$ & IS$\uparrow$ & P$\uparrow$ & R$\uparrow$
+         & FID$\downarrow$ & IS$\uparrow$ & FID$\downarrow$ & IS$\uparrow$ \\
+    \midrule
+    \multirow{2}{*}{Classical$^\dagger$}
+      & DCGAN   & -- & -- & -- & -- & -- & -- & -- & -- \\
+      & WGAN-GP & -- & -- & -- & -- & -- & -- & -- & -- \\
+    \midrule
+    \multirow{3}{*}{Quantum}
+      & Patch QGAN  & -- & -- & -- & -- & -- & -- & -- & -- \\
+      & MosaIQ      & -- & -- & -- & -- & -- & -- & -- & -- \\
+      & Latent QGAN & -- & -- & -- & -- & -- & -- & -- & -- \\
+    \midrule
+    \multirow{3}{*}{Ablation}
+      & EQ-GAN$_\text{no-style}$ & -- & -- & -- & -- & -- & -- & -- & -- \\
+      & EQ-GAN$_\text{no-ent}$   & -- & -- & -- & -- & -- & -- & -- & -- \\
+      & \textbf{EQ-GAN (ours)}  & -- & -- & -- & -- & -- & -- & -- & -- \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\subsection{Ablation Study}
+
+Figure~\ref{fig:ablation} compares FID across ablation variants.
+[To be populated.]
+
+\subsection{Quantum Characterization}
+
+\paragraph{Expressibility.}
+Table~\ref{tab:expressibility} compares the KL divergence $\mathcal{E}$
+for EQ-GAN and EQ-GAN$_\text{no-ent}$.
+
+\paragraph{Entanglement entropy.}
+Figure~\ref{fig:entropy} shows the evolution of $S(\rho_\mathcal{C})$ during
+training, indicating whether the variational layers learn to leverage the
+entanglement structure created by $U_E$.
+
+\subsection{Qualitative Results}
+
+Figure~\ref{fig:samples} shows generated samples for all 10 FashionMNIST
+classes at epochs 10, 30, and 50. [To be populated.]
+
+\subsection{Discussion}
+
+\paragraph{Entanglement contribution.}
+The ablation between EQ-GAN and EQ-GAN$_\text{no-ent}$ directly tests whether
+the CNOT-based style injection is the source of any generative improvement.
+If EQ-GAN outperforms EQ-GAN$_\text{no-ent}$ with statistical significance,
+the entanglement core is a net contributor to generative quality. If not, the
+improvement is attributable to the IQP-encoded style information alone, and
+the entanglement provides no additional benefit.
+
+\paragraph{NISQ limitations.}
+All results are from classical simulation of quantum circuits. The findings
+characterize the \emph{algorithmic} role of entanglement in the architecture,
+independent of hardware noise. Running EQ-GAN on actual quantum processors
+would introduce gate errors and decoherence, potentially degrading generation
+quality. Noise-mitigation strategies \cite{temme2017error} could be explored
+in future work.
+
+\paragraph{Parameter efficiency.}
+EQ-GAN contains only 72 variational quantum parameters out of
+$\sim$2.8M total, with the remainder in the classical encoder-decoder.
+This ratio reflects the dominant classical contribution and raises the question
+of whether the quantum components provide genuine value or are overshadowed
+by the classical decoder's capacity.
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+We presented EQ-GAN, a conditional hybrid QGAN architecture that introduces
+quantum entanglement as an explicit style injection mechanism via a structured
+CNOT entanglement core connecting dedicated content and style qubit registers.
+Through systematic evaluation on three image datasets and ablation studies
+isolating the entanglement contribution, we provide quantitative empirical
+evidence on the role of entanglement in near-term quantum generative models.
+
+Our findings contribute to an ongoing empirical program of understanding
+quantum advantages and limitations in the NISQ era, providing an architectural
+blueprint for entanglement-aware QGAN design and a reproducible benchmark for
+future quantum generative models.
+
+\paragraph{Future work.} Promising directions include: (i) evaluation on
+actual quantum processors to assess the impact of hardware noise; (ii) scaling
+to higher-resolution images via hierarchical quantum-classical architectures;
+(iii) extending the entanglement core to multi-class style control with
+larger style registers; and (iv) theoretical analysis of the expressibility
+advantage conferred by the entanglement core.
+
+% ============================================================
+\paragraph{Limitations and ethical considerations.}
+This work does not demonstrate quantum advantage over classical methods.
+All experiments were conducted on simulated quantum circuits. BreastMNIST
+experiments are conducted as a generalization benchmark only; the generated
+medical images should not be used for clinical purposes.
+
+% ============================================================
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

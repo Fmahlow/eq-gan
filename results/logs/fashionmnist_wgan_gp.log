@@ -1,0 +1,47 @@
+Device: cuda | Dataset: fashionmnist | Model: wgan_gp
+Classes: 10 | Batches/epoch: 79
+Epoch 001/50 | D: -6.3862 | G: +1.9241 | Time: 5.9s
+Epoch 002/50 | D: -4.6500 | G: -1.5163 | Time: 5.9s
+Epoch 003/50 | D: -2.8031 | G: -2.7743 | Time: 5.8s
+Epoch 004/50 | D: -3.0039 | G: -1.1306 | Time: 6.1s
+Epoch 005/50 | D: -2.8110 | G: -0.9032 | Time: 6.3s
+Epoch 006/50 | D: -2.9563 | G: +0.2015 | Time: 5.9s
+Epoch 007/50 | D: -2.3524 | G: -1.5706 | Time: 6.4s
+Epoch 008/50 | D: -2.3680 | G: +0.7158 | Time: 5.9s
+Epoch 009/50 | D: -3.1518 | G: +1.6199 | Time: 7.2s
+Epoch 010/50 | D: -2.8703 | G: -0.8961 | Time: 11.0s
+  → FID=145.77 | IS=2.402 | P=0.156 R=0.010
+  Saved: ./results/figures/fashionmnist_wgan_gp/samples_epoch010.png
+Epoch 011/50 | D: -2.7294 | G: -1.4511 | Time: 6.3s
+Epoch 012/50 | D: -3.3508 | G: +0.2375 | Time: 5.9s
+Epoch 013/50 | D: -3.9333 | G: +4.2273 | Time: 6.0s
+Epoch 014/50 | D: -2.4907 | G: +1.6258 | Time: 6.1s
+Epoch 015/50 | D: -3.6584 | G: +0.4678 | Time: 6.0s
+Epoch 016/50 | D: -4.6800 | G: +0.3191 | Time: 7.0s
+Epoch 017/50 | D: -5.6284 | G: +10.8798 | Time: 11.4s
+Epoch 018/50 | D: -6.7315 | G: +0.7639 | Time: 11.5s
+Epoch 019/50 | D: -5.4786 | G: -1.3949 | Time: 11.2s
+Epoch 020/50 | D: -7.3247 | G: -6.9656 | Time: 11.3s
+  → FID=129.00 | IS=2.350 | P=0.124 R=0.012
+  Saved: ./results/figures/fashionmnist_wgan_gp/samples_epoch020.png
+Epoch 021/50 | D: -10.0644 | G: -4.3871 | Time: 14.7s
+Epoch 022/50 | D: -9.6709 | G: -7.0561 | Time: 16.8s
+Epoch 023/50 | D: -8.8242 | G: +41.1084 | Time: 18.5s
+Epoch 024/50 | D: -14.8646 | G: +1.9377 | Time: 17.1s
+Epoch 025/50 | D: -6.6676 | G: +5.4744 | Time: 15.7s
+Epoch 026/50 | D: -11.2099 | G: +5.3747 | Time: 18.1s
+Epoch 027/50 | D: -15.8199 | G: +13.1690 | Time: 16.1s
+Epoch 028/50 | D: -17.1384 | G: +17.4250 | Time: 16.0s
+Epoch 029/50 | D: -16.6982 | G: -17.8725 | Time: 15.3s
+Epoch 030/50 | D: -13.8568 | G: -36.2961 | Time: 16.1s
+  → FID=162.35 | IS=2.022 | P=0.196 R=0.003
+  Saved: ./results/figures/fashionmnist_wgan_gp/samples_epoch030.png
+Epoch 031/50 | D: -26.2718 | G: -3.7760 | Time: 11.4s
+Epoch 032/50 | D: -32.8825 | G: -25.9262 | Time: 12.6s
+Epoch 033/50 | D: -36.2328 | G: -43.6981 | Time: 11.5s
+Epoch 034/50 | D: -4.3709 | G: +74.6449 | Time: 11.5s
+Epoch 035/50 | D: -39.9644 | G: +35.4206 | Time: 11.7s
+Epoch 036/50 | D: -51.6962 | G: +19.2089 | Time: 11.7s
+Epoch 037/50 | D: -51.2103 | G: -131.9577 | Time: 11.6s
+Epoch 038/50 | D: -57.0333 | G: -131.3129 | Time: 12.1s
+Epoch 039/50 | D: -34.8817 | G: +78.3103 | Time: 12.2s

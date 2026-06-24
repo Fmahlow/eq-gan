@@ -1,0 +1,49 @@
+Device: cuda | Dataset: fashionmnist | Model: dcgan
+Classes: 10 | Batches/epoch: 79
+Epoch 001/50 | D: +0.2499 | G: +4.7238 | Time: 5.0s
+Epoch 002/50 | D: +0.1738 | G: +4.7564 | Time: 4.5s
+Epoch 003/50 | D: +0.1240 | G: +6.4283 | Time: 4.4s
+Epoch 004/50 | D: +0.6100 | G: +2.5726 | Time: 4.2s
+Epoch 005/50 | D: +0.6105 | G: +2.6045 | Time: 4.4s
+Epoch 006/50 | D: +0.5226 | G: +2.7876 | Time: 4.5s
+Epoch 007/50 | D: +0.4164 | G: +3.1323 | Time: 4.4s
+Epoch 008/50 | D: +0.3746 | G: +3.3589 | Time: 4.3s
+Epoch 009/50 | D: +0.3938 | G: +3.4570 | Time: 4.4s
+Epoch 010/50 | D: +0.4344 | G: +3.2610 | Time: 4.3s
+  → FID=140.59 | IS=2.390 | P=0.069 R=0.011
+  Saved: ./results/figures/fashionmnist_dcgan/samples_epoch010.png
+Epoch 011/50 | D: +0.4506 | G: +3.4282 | Time: 6.1s
+Epoch 012/50 | D: +0.5675 | G: +2.9951 | Time: 3.4s
+Epoch 013/50 | D: +0.6227 | G: +2.7683 | Time: 3.9s
+Epoch 014/50 | D: +0.6232 | G: +2.8097 | Time: 4.4s
+Epoch 015/50 | D: +0.6691 | G: +2.7620 | Time: 4.5s
+Epoch 016/50 | D: +0.6689 | G: +2.6377 | Time: 4.3s
+Epoch 017/50 | D: +0.6577 | G: +2.8095 | Time: 4.1s
+Epoch 018/50 | D: +0.6945 | G: +2.8682 | Time: 4.2s
+Epoch 019/50 | D: +0.6745 | G: +2.6118 | Time: 4.5s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:67: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  
+Epoch 020/50 | D: +0.6827 | G: +2.8080 | Time: 4.3s
+  → FID=88.94 | IS=2.444 | P=0.143 R=0.075
+  Saved: ./results/figures/fashionmnist_dcgan/samples_epoch020.png
+Epoch 021/50 | D: +0.6603 | G: +2.8148 | Time: 8.4s
+Epoch 022/50 | D: +0.6721 | G: +2.8308 | Time: 7.6s
+Epoch 023/50 | D: +0.6555 | G: +2.7507 | Time: 8.6s
+Epoch 024/50 | D: +0.6478 | G: +2.8966 | Time: 8.9s
+Epoch 025/50 | D: +0.6389 | G: +2.8425 | Time: 12.3s
+Epoch 026/50 | D: +0.6168 | G: +2.9077 | Time: 10.5s
+Epoch 027/50 | D: +0.6110 | G: +2.9080 | Time: 10.1s
+Epoch 028/50 | D: +0.6060 | G: +2.9450 | Time: 9.7s
+Epoch 029/50 | D: +0.5847 | G: +2.9349 | Time: 8.7s
+Epoch 030/50 | D: +0.5749 | G: +2.8747 | Time: 10.5s
+  → FID=74.26 | IS=2.529 | P=0.181 R=0.182
+  Saved: ./results/figures/fashionmnist_dcgan/samples_epoch030.png
+Epoch 031/50 | D: +0.5795 | G: +3.0686 | Time: 10.0s
+Epoch 032/50 | D: +0.5650 | G: +3.0239 | Time: 8.8s
+Epoch 033/50 | D: +0.5644 | G: +3.0615 | Time: 9.8s
+Epoch 034/50 | D: +0.5588 | G: +3.0950 | Time: 10.3s
+Epoch 035/50 | D: +0.5349 | G: +2.9721 | Time: 10.1s
+Epoch 036/50 | D: +0.5401 | G: +3.1103 | Time: 9.9s
+Epoch 037/50 | D: +0.5195 | G: +3.1123 | Time: 9.0s
+Epoch 038/50 | D: +0.5125 | G: +3.2062 | Time: 8.8s
+Epoch 039/50 | D: +0.4994 | G: +3.1850 | Time: 9.3s

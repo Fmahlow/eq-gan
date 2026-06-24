@@ -1,0 +1,38 @@
+Device: cuda
+Dataset: breastmnist | Mode: full | Epochs: 50 | Train subset: 5000
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Classes: 2 | Batches/epoch: 18
+Traceback (most recent call last):
+  File "/workspace/quantum-gan-paper/experiments/run_experiment.py", line 158, in <module>
+    main()
+  File "/workspace/quantum-gan-paper/experiments/run_experiment.py", line 121, in main
+    evaluator.cache_real_features(args.dataset, test_loader)
+  File "/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py", line 179, in cache_real_features
+    for imgs, _ in real_loader:
+  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
+    data.reraise()
+  File "/usr/local/lib/python3.11/dist-packages/torch/_utils.py", line 706, in reraise
+    raise exception
+AttributeError: Caught AttributeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/workspace/quantum-gan-paper/experiments/../src/data/datasets.py", line 78, in __getitem__
+    return img, label.squeeze().long()
+                ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'long'
+
