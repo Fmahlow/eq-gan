@@ -1,0 +1,68 @@
+Device: cuda | Dataset: breastmnist | Model: dcgan
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Classes: 2 | Batches/epoch: 9
+Epoch 001/50 | D: +0.4744 | G: +2.4599 | Time: 5.1s
+Epoch 002/50 | D: +0.0592 | G: +4.8972 | Time: 1.9s
+Epoch 003/50 | D: +0.0050 | G: +6.6823 | Time: 2.0s
+Epoch 004/50 | D: +0.0043 | G: +8.0563 | Time: 1.9s
+Epoch 005/50 | D: +0.0006 | G: +9.6662 | Time: 2.1s
+Epoch 006/50 | D: +0.1179 | G: +6.0566 | Time: 2.3s
+Epoch 007/50 | D: +0.0034 | G: +7.4683 | Time: 1.6s
+Epoch 008/50 | D: +0.0060 | G: +8.3744 | Time: 1.2s
+Epoch 009/50 | D: +0.0007 | G: +9.1703 | Time: 1.5s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 010/50 | D: +0.0002 | G: +10.0386 | Time: 1.7s
+  → FID=476.88 | IS=1.236 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_dcgan/samples_epoch010.png
+Epoch 011/50 | D: +0.0001 | G: +11.5355 | Time: 2.6s
+Epoch 012/50 | D: +0.0412 | G: +10.4510 | Time: 1.8s
+Epoch 013/50 | D: +0.0022 | G: +8.7045 | Time: 1.4s
+Epoch 014/50 | D: +0.0005 | G: +9.6070 | Time: 1.7s
+Epoch 015/50 | D: +0.0001 | G: +11.9355 | Time: 1.4s
+Epoch 016/50 | D: +0.0000 | G: +12.4734 | Time: 1.3s
+Epoch 017/50 | D: +0.0000 | G: +14.2209 | Time: 1.4s
+Epoch 018/50 | D: +0.0002 | G: +15.3460 | Time: 1.3s
+Epoch 019/50 | D: +0.0721 | G: +10.7410 | Time: 2.0s
+Epoch 020/50 | D: +0.0825 | G: +7.1690 | Time: 2.2s
+  → FID=341.01 | IS=1.279 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_dcgan/samples_epoch020.png
+Epoch 021/50 | D: +0.0067 | G: +7.9538 | Time: 1.7s
+Epoch 022/50 | D: +0.1900 | G: +8.4976 | Time: 1.9s
+Epoch 023/50 | D: +0.0517 | G: +8.1787 | Time: 1.5s
+Epoch 024/50 | D: +0.0113 | G: +7.0690 | Time: 1.8s
+Epoch 025/50 | D: +0.3116 | G: +6.7904 | Time: 1.5s
+Epoch 026/50 | D: +0.1186 | G: +7.1714 | Time: 1.4s
+Epoch 027/50 | D: +0.3455 | G: +7.0673 | Time: 1.5s
+Epoch 028/50 | D: +0.2938 | G: +5.6089 | Time: 1.2s
+Epoch 029/50 | D: +0.1749 | G: +7.8163 | Time: 1.6s
+Epoch 030/50 | D: +0.3278 | G: +6.1200 | Time: 1.7s
+  → FID=197.29 | IS=1.852 | P=0.002 R=0.000
+  Saved: ./results/figures/breastmnist_dcgan/samples_epoch030.png
+Epoch 031/50 | D: +0.2323 | G: +8.2769 | Time: 1.8s
+Epoch 032/50 | D: +0.2042 | G: +6.2359 | Time: 1.3s
+Epoch 033/50 | D: +0.3097 | G: +7.5247 | Time: 2.2s
+Epoch 034/50 | D: +0.4556 | G: +7.0808 | Time: 1.5s
+Epoch 035/50 | D: +0.1847 | G: +6.6567 | Time: 1.5s
+Epoch 036/50 | D: +0.2154 | G: +5.9936 | Time: 1.5s
+Epoch 037/50 | D: +0.1722 | G: +7.3461 | Time: 1.5s
+Epoch 038/50 | D: +0.4107 | G: +6.3833 | Time: 1.7s
+Epoch 039/50 | D: +0.2904 | G: +6.9828 | Time: 1.8s
+Epoch 040/50 | D: +0.3748 | G: +4.6210 | Time: 1.6s
+  → FID=208.60 | IS=1.904 | P=0.002 R=0.000
+  Saved: ./results/figures/breastmnist_dcgan/samples_epoch040.png
+Epoch 041/50 | D: +0.1081 | G: +7.3646 | Time: 2.0s
+Epoch 042/50 | D: +0.1367 | G: +9.8505 | Time: 1.6s
+Epoch 043/50 | D: +0.1745 | G: +6.9796 | Time: 1.8s
+Epoch 044/50 | D: +0.0933 | G: +6.3758 | Time: 2.5s
+Epoch 045/50 | D: +0.2806 | G: +9.4054 | Time: 2.1s
+Epoch 046/50 | D: +0.1789 | G: +6.6091 | Time: 1.8s
+Epoch 047/50 | D: +0.3094 | G: +5.3265 | Time: 2.3s
+Epoch 048/50 | D: +0.4170 | G: +8.2480 | Time: 1.9s
+Epoch 049/50 | D: +0.1384 | G: +6.2657 | Time: 1.4s
+Epoch 050/50 | D: +0.3805 | G: +7.8192 | Time: 1.5s
+  → FID=170.46 | IS=1.573 | P=0.026 R=0.000
+  Saved: ./results/figures/breastmnist_dcgan/samples_epoch050.png
+
+Done. Results in: ./results/checkpoints/breastmnist_dcgan

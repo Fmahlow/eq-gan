@@ -1,3 +1,78 @@
 Device: cuda
 Dataset: mnist | Mode: full | Epochs: 50 | Train subset: 5000
 Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -14.2181 | G: +8.3793 | GP: 0.2501 | Time: 186.2s
+Epoch 002/50 | D: -11.0146 | G: +5.5580 | GP: 0.1824 | Time: 186.0s
+Epoch 003/50 | D: -10.3527 | G: +6.7986 | GP: 0.1609 | Time: 190.4s
+Epoch 004/50 | D: -11.2522 | G: +8.8924 | GP: 0.1827 | Time: 193.0s
+Epoch 005/50 | D: -13.5623 | G: +17.6876 | GP: 0.2043 | Time: 184.9s
+Epoch 006/50 | D: -13.4600 | G: +21.0559 | GP: 0.2159 | Time: 183.9s
+Epoch 007/50 | D: -14.3939 | G: +23.7829 | GP: 0.2284 | Time: 183.6s
+Epoch 008/50 | D: -15.9128 | G: +31.5610 | GP: 0.2297 | Time: 186.7s
+Epoch 009/50 | D: -17.8072 | G: +40.7214 | GP: 0.2340 | Time: 184.5s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 010/50 | D: -19.7486 | G: +45.3207 | GP: 0.2398 | Time: 186.9s
+    FID=237.69 | IS=2.002±0.055 | P=0.059 R=0.000
+  Saved: ./results/figures/mnist_full/samples_epoch010.png
+  → FID @ epoch 10: 237.69
+Epoch 011/50 | D: -18.9269 | G: +56.3677 | GP: 0.2398 | Time: 183.5s
+Epoch 012/50 | D: -20.3530 | G: +64.2489 | GP: 0.2430 | Time: 182.0s
+Epoch 013/50 | D: -20.9194 | G: +63.9614 | GP: 0.2426 | Time: 180.9s
+Epoch 014/50 | D: -24.8302 | G: +66.1830 | GP: 0.2297 | Time: 186.1s
+Epoch 015/50 | D: -22.3896 | G: +83.1018 | GP: 0.2151 | Time: 181.0s
+Epoch 016/50 | D: -26.7623 | G: +87.3237 | GP: 0.2042 | Time: 189.1s
+Epoch 017/50 | D: -24.5702 | G: +102.4901 | GP: 0.1950 | Time: 189.1s
+Epoch 018/50 | D: -25.1869 | G: +114.0352 | GP: 0.1896 | Time: 184.9s
+Epoch 019/50 | D: -27.8858 | G: +110.6137 | GP: 0.1763 | Time: 189.0s
+Epoch 020/50 | D: -27.9409 | G: +128.0075 | GP: 0.1644 | Time: 197.1s
+    FID=192.65 | IS=2.352±0.219 | P=0.033 R=0.001
+  Saved: ./results/figures/mnist_full/samples_epoch020.png
+  → FID @ epoch 20: 192.65
+Epoch 021/50 | D: -31.9326 | G: +145.2685 | GP: 0.1556 | Time: 183.9s
+Epoch 022/50 | D: -31.2087 | G: +134.3744 | GP: 0.1504 | Time: 191.0s
+Epoch 023/50 | D: -26.6248 | G: +180.4681 | GP: 0.1379 | Time: 189.9s
+Epoch 024/50 | D: -38.0834 | G: +181.8273 | GP: 0.1239 | Time: 189.7s
+Epoch 025/50 | D: -47.1145 | G: +202.8236 | GP: 0.1140 | Time: 194.9s
+Epoch 026/50 | D: -46.4333 | G: +211.1432 | GP: 0.0993 | Time: 198.3s
+Epoch 027/50 | D: -39.7838 | G: +220.5475 | GP: 0.0986 | Time: 201.9s
+Epoch 028/50 | D: -45.5364 | G: +229.7377 | GP: 0.0894 | Time: 186.4s
+Epoch 029/50 | D: -45.4772 | G: +263.8446 | GP: 0.0773 | Time: 186.1s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 030/50 | D: -41.8785 | G: +272.3899 | GP: 0.0725 | Time: 190.7s
+    FID=153.30 | IS=1.870±0.077 | P=0.066 R=0.004
+  Saved: ./results/figures/mnist_full/samples_epoch030.png
+  → FID @ epoch 30: 153.30
+Epoch 031/50 | D: -45.6473 | G: +282.0451 | GP: 0.0640 | Time: 190.2s
+Epoch 032/50 | D: -46.1547 | G: +326.4764 | GP: 0.0538 | Time: 195.1s
+Epoch 033/50 | D: -41.3902 | G: +305.4022 | GP: 0.0555 | Time: 201.7s
+Epoch 034/50 | D: -60.7494 | G: +332.5110 | GP: 0.0534 | Time: 197.2s
+Epoch 035/50 | D: -64.9619 | G: +361.7262 | GP: 0.0487 | Time: 189.8s
+Epoch 036/50 | D: -54.6236 | G: +411.7781 | GP: 0.0507 | Time: 202.8s
+Epoch 037/50 | D: -65.1527 | G: +405.7255 | GP: 0.0485 | Time: 194.4s
+Epoch 038/50 | D: -63.2233 | G: +408.8611 | GP: 0.0542 | Time: 197.6s
+Epoch 039/50 | D: -57.4811 | G: +418.6389 | GP: 0.0434 | Time: 195.4s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 040/50 | D: -52.5089 | G: +467.3337 | GP: 0.0422 | Time: 197.7s
+    FID=103.28 | IS=1.781±0.153 | P=0.191 R=0.014
+  Saved: ./results/figures/mnist_full/samples_epoch040.png
+  → FID @ epoch 40: 103.28
+Epoch 041/50 | D: -53.8349 | G: +474.5630 | GP: 0.0434 | Time: 206.4s
+Epoch 042/50 | D: -69.4233 | G: +439.5741 | GP: 0.0482 | Time: 194.1s
+Epoch 043/50 | D: -75.4198 | G: +505.0899 | GP: 0.0408 | Time: 200.8s
+Epoch 044/50 | D: -75.3531 | G: +530.3686 | GP: 0.0411 | Time: 204.0s
+Epoch 045/50 | D: -75.1876 | G: +526.5679 | GP: 0.0384 | Time: 197.1s
+Epoch 046/50 | D: -88.8032 | G: +557.0483 | GP: 0.0360 | Time: 188.8s
+Epoch 047/50 | D: -67.7098 | G: +596.3826 | GP: 0.0399 | Time: 185.5s
+Epoch 048/50 | D: -92.7836 | G: +605.8757 | GP: 0.0356 | Time: 179.7s
+Epoch 049/50 | D: -69.1778 | G: +583.6428 | GP: 0.0388 | Time: 187.2s
+Epoch 050/50 | D: -53.8754 | G: +623.9867 | GP: 0.0347 | Time: 189.3s
+    FID=118.23 | IS=1.793±0.179 | P=0.149 R=0.005
+  Saved: ./results/figures/mnist_full/samples_epoch050.png
+  → FID @ epoch 50: 118.23
+  Saved: ./results/figures/mnist_full/loss_curves.png
+  Saved: ./results/figures/mnist_full/fid_curve.png
+
+Done. Results in: ./results/checkpoints/mnist_full

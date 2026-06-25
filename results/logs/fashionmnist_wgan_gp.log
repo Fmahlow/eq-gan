@@ -45,3 +45,24 @@ Epoch 036/50 | D: -51.6962 | G: +19.2089 | Time: 11.7s
 Epoch 037/50 | D: -51.2103 | G: -131.9577 | Time: 11.6s
 Epoch 038/50 | D: -57.0333 | G: -131.3129 | Time: 12.1s
 Epoch 039/50 | D: -34.8817 | G: +78.3103 | Time: 12.2s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:67: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  
+Epoch 040/50 | D: -35.9880 | G: +47.2963 | Time: 12.0s
+  → FID=225.99 | IS=1.762 | P=0.214 R=0.000
+  Saved: ./results/figures/fashionmnist_wgan_gp/samples_epoch040.png
+Epoch 041/50 | D: -76.6687 | G: -128.2289 | Time: 14.1s
+Epoch 042/50 | D: -25.3032 | G: -134.9842 | Time: 12.8s
+Epoch 043/50 | D: -35.1932 | G: +183.6673 | Time: 12.6s
+Epoch 044/50 | D: -70.1379 | G: +323.6183 | Time: 13.7s
+Epoch 045/50 | D: -42.6711 | G: +172.2059 | Time: 14.8s
+Epoch 046/50 | D: -52.3188 | G: +69.3050 | Time: 12.8s
+Epoch 047/50 | D: -142.6534 | G: +123.8383 | Time: 13.3s
+Epoch 048/50 | D: -89.0264 | G: +486.8037 | Time: 12.4s
+Epoch 049/50 | D: -64.4299 | G: +413.5663 | Time: 11.7s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:67: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  
+Epoch 050/50 | D: -109.3244 | G: +359.1891 | Time: 11.7s
+  → FID=296.71 | IS=1.533 | P=0.017 R=0.000
+  Saved: ./results/figures/fashionmnist_wgan_gp/samples_epoch050.png
+
+Done. Results in: ./results/checkpoints/fashionmnist_wgan_gp

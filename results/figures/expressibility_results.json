@@ -1,0 +1,10 @@
+{
+  "eq_gan_full": 0.0024543753877648462,
+  "no_entanglement": 0.0002518111712142547,
+  "no_style": 1.4148873746074633,
+  "patch_qgan_4q": 0.007640357003343451,
+  "entropy_no_core_mean": 1.8352082078931404,
+  "entropy_no_core_std": 0.22201514274521617,
+  "entropy_full_mean": 1.9345719412246312,
+  "entropy_full_std": 0.04202950131370399
+}

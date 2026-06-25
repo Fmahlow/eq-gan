@@ -1,0 +1,66 @@
+Device: cuda | Dataset: breastmnist | Model: wgan_gp
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Classes: 2 | Batches/epoch: 9
+Epoch 001/50 | D: -14.4836 | G: +6.0576 | Time: 6.2s
+Epoch 002/50 | D: -37.0347 | G: +17.8137 | Time: 1.9s
+Epoch 003/50 | D: -31.9421 | G: +12.2016 | Time: 2.1s
+Epoch 004/50 | D: -42.9632 | G: +11.6368 | Time: 2.1s
+Epoch 005/50 | D: -41.1203 | G: +11.5925 | Time: 2.1s
+Epoch 006/50 | D: -61.7174 | G: +14.1886 | Time: 2.0s
+Epoch 007/50 | D: -73.1076 | G: +17.8200 | Time: 2.3s
+Epoch 008/50 | D: -57.5069 | G: +13.2926 | Time: 1.9s
+Epoch 009/50 | D: -68.4090 | G: +11.3957 | Time: 2.3s
+Epoch 010/50 | D: -47.4777 | G: +12.2534 | Time: 2.8s
+  → FID=316.61 | IS=1.715 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_wgan_gp/samples_epoch010.png
+Epoch 011/50 | D: -79.4500 | G: +11.9348 | Time: 2.5s
+Epoch 012/50 | D: -50.7603 | G: +14.3097 | Time: 2.7s
+Epoch 013/50 | D: -88.7518 | G: +14.3953 | Time: 2.0s
+Epoch 014/50 | D: -77.9207 | G: +13.8792 | Time: 1.8s
+Epoch 015/50 | D: +69.6390 | G: +14.4811 | Time: 2.1s
+Epoch 016/50 | D: -69.3553 | G: +19.9475 | Time: 2.9s
+Epoch 017/50 | D: -108.1807 | G: +15.7855 | Time: 2.6s
+Epoch 018/50 | D: +79.5910 | G: +20.1993 | Time: 3.0s
+Epoch 019/50 | D: -65.8147 | G: +16.8245 | Time: 2.9s
+Epoch 020/50 | D: -76.3549 | G: +13.8903 | Time: 2.9s
+  → FID=216.76 | IS=2.375 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_wgan_gp/samples_epoch020.png
+Epoch 021/50 | D: -88.1071 | G: +13.9398 | Time: 2.2s
+Epoch 022/50 | D: -111.5418 | G: +15.3511 | Time: 2.0s
+Epoch 023/50 | D: -132.2226 | G: +13.4257 | Time: 1.9s
+Epoch 024/50 | D: -131.2028 | G: +19.9227 | Time: 2.2s
+Epoch 025/50 | D: -158.1566 | G: +26.7807 | Time: 2.7s
+Epoch 026/50 | D: -157.6226 | G: +25.7522 | Time: 2.7s
+Epoch 027/50 | D: -148.0881 | G: +30.0599 | Time: 2.6s
+Epoch 028/50 | D: -95.9261 | G: +26.7260 | Time: 2.3s
+Epoch 029/50 | D: -129.8717 | G: +27.1527 | Time: 3.0s
+Epoch 030/50 | D: -165.9577 | G: +23.6789 | Time: 2.3s
+  → FID=256.88 | IS=1.973 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_wgan_gp/samples_epoch030.png
+Epoch 031/50 | D: -197.4887 | G: +29.0799 | Time: 2.2s
+Epoch 032/50 | D: -177.4556 | G: +38.6537 | Time: 2.8s
+Epoch 033/50 | D: -184.6779 | G: +29.8936 | Time: 2.4s
+Epoch 034/50 | D: -185.8219 | G: +29.0020 | Time: 2.8s
+Epoch 035/50 | D: -217.8111 | G: +39.5390 | Time: 2.3s
+Epoch 036/50 | D: -163.3383 | G: +42.9344 | Time: 2.0s
+Epoch 037/50 | D: -202.8013 | G: +35.3197 | Time: 2.6s
+Epoch 038/50 | D: -217.6060 | G: +39.9085 | Time: 2.1s
+Epoch 039/50 | D: -208.1987 | G: +30.3883 | Time: 3.0s
+Epoch 040/50 | D: -231.8926 | G: +42.9098 | Time: 2.7s
+  → FID=340.48 | IS=1.794 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_wgan_gp/samples_epoch040.png
+Epoch 041/50 | D: -187.5361 | G: +41.9394 | Time: 2.1s
+Epoch 042/50 | D: -202.9620 | G: +34.5919 | Time: 1.8s
+Epoch 043/50 | D: -240.9781 | G: +39.8136 | Time: 2.4s
+Epoch 044/50 | D: -227.0326 | G: +39.1186 | Time: 1.8s
+Epoch 045/50 | D: -247.2897 | G: +38.6713 | Time: 2.5s
+Epoch 046/50 | D: -259.8594 | G: +30.1606 | Time: 2.0s
+Epoch 047/50 | D: -186.5583 | G: +27.9055 | Time: 1.8s
+Epoch 048/50 | D: -241.9245 | G: +31.8654 | Time: 2.0s
+Epoch 049/50 | D: -303.6942 | G: +48.8342 | Time: 1.7s
+Epoch 050/50 | D: -308.5488 | G: +54.1320 | Time: 1.9s
+  → FID=348.94 | IS=1.856 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_wgan_gp/samples_epoch050.png
+
+Done. Results in: ./results/checkpoints/breastmnist_wgan_gp

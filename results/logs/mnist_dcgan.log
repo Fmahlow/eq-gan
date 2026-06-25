@@ -1,0 +1,68 @@
+Device: cuda | Dataset: mnist | Model: dcgan
+Classes: 10 | Batches/epoch: 79
+Epoch 001/50 | D: +0.6529 | G: +2.2479 | Time: 12.5s
+Epoch 002/50 | D: +0.5888 | G: +2.5748 | Time: 11.4s
+Epoch 003/50 | D: +0.5264 | G: +2.8319 | Time: 12.1s
+Epoch 004/50 | D: +0.6008 | G: +2.6203 | Time: 10.6s
+Epoch 005/50 | D: +0.7149 | G: +2.5988 | Time: 11.4s
+Epoch 006/50 | D: +0.8322 | G: +2.2536 | Time: 10.7s
+Epoch 007/50 | D: +0.8230 | G: +2.4650 | Time: 10.4s
+Epoch 008/50 | D: +0.8447 | G: +2.3455 | Time: 13.0s
+Epoch 009/50 | D: +0.8008 | G: +2.3703 | Time: 10.0s
+Epoch 010/50 | D: +0.7844 | G: +2.3916 | Time: 10.7s
+  → FID=49.71 | IS=2.001 | P=0.276 R=0.375
+  Saved: ./results/figures/mnist_dcgan/samples_epoch010.png
+Epoch 011/50 | D: +0.7738 | G: +2.5772 | Time: 11.6s
+Epoch 012/50 | D: +0.8047 | G: +2.5073 | Time: 13.5s
+Epoch 013/50 | D: +0.7596 | G: +2.5228 | Time: 11.0s
+Epoch 014/50 | D: +0.7826 | G: +2.4914 | Time: 13.6s
+Epoch 015/50 | D: +0.7494 | G: +2.4458 | Time: 13.6s
+Epoch 016/50 | D: +0.7244 | G: +2.6392 | Time: 10.1s
+Epoch 017/50 | D: +0.6737 | G: +2.6501 | Time: 10.2s
+Epoch 018/50 | D: +0.6676 | G: +2.6771 | Time: 10.4s
+Epoch 019/50 | D: +0.6711 | G: +2.6381 | Time: 12.0s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 020/50 | D: +0.6390 | G: +2.9847 | Time: 13.2s
+  → FID=31.27 | IS=1.932 | P=0.350 R=0.376
+  Saved: ./results/figures/mnist_dcgan/samples_epoch020.png
+Epoch 021/50 | D: +0.6350 | G: +2.6428 | Time: 10.3s
+Epoch 022/50 | D: +0.6241 | G: +2.6588 | Time: 10.2s
+Epoch 023/50 | D: +0.6069 | G: +3.0110 | Time: 11.8s
+Epoch 024/50 | D: +0.5791 | G: +3.0355 | Time: 11.1s
+Epoch 025/50 | D: +0.5823 | G: +3.0893 | Time: 11.7s
+Epoch 026/50 | D: +0.5623 | G: +3.1922 | Time: 11.5s
+Epoch 027/50 | D: +0.5344 | G: +2.9939 | Time: 12.7s
+Epoch 028/50 | D: +0.5149 | G: +3.1650 | Time: 10.8s
+Epoch 029/50 | D: +0.4976 | G: +3.2026 | Time: 10.6s
+Epoch 030/50 | D: +0.5052 | G: +3.2140 | Time: 10.0s
+  → FID=25.18 | IS=1.867 | P=0.447 R=0.431
+  Saved: ./results/figures/mnist_dcgan/samples_epoch030.png
+Epoch 031/50 | D: +0.4802 | G: +3.3765 | Time: 2.8s
+Epoch 032/50 | D: +0.4653 | G: +3.4257 | Time: 2.3s
+Epoch 033/50 | D: +0.4549 | G: +3.4038 | Time: 2.4s
+Epoch 034/50 | D: +0.4563 | G: +3.4141 | Time: 2.6s
+Epoch 035/50 | D: +0.4147 | G: +3.5624 | Time: 2.5s
+Epoch 036/50 | D: +0.4305 | G: +3.6569 | Time: 2.5s
+Epoch 037/50 | D: +0.4034 | G: +3.6623 | Time: 2.4s
+Epoch 038/50 | D: +0.4076 | G: +3.5893 | Time: 2.7s
+Epoch 039/50 | D: +0.3947 | G: +3.5967 | Time: 2.5s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 040/50 | D: +0.3729 | G: +3.6200 | Time: 2.4s
+  → FID=30.84 | IS=1.987 | P=0.456 R=0.496
+  Saved: ./results/figures/mnist_dcgan/samples_epoch040.png
+Epoch 041/50 | D: +0.3746 | G: +3.7745 | Time: 3.5s
+Epoch 042/50 | D: +0.3611 | G: +3.7701 | Time: 3.7s
+Epoch 043/50 | D: +0.3349 | G: +3.9098 | Time: 3.9s
+Epoch 044/50 | D: +0.3517 | G: +4.0006 | Time: 4.1s
+Epoch 045/50 | D: +0.3362 | G: +3.9288 | Time: 3.9s
+Epoch 046/50 | D: +0.3226 | G: +3.9948 | Time: 3.9s
+Epoch 047/50 | D: +0.2943 | G: +4.1774 | Time: 3.7s
+Epoch 048/50 | D: +0.3001 | G: +3.9105 | Time: 3.9s
+Epoch 049/50 | D: +0.3148 | G: +4.1610 | Time: 3.8s
+Epoch 050/50 | D: +0.2890 | G: +4.1780 | Time: 3.5s
+  → FID=21.33 | IS=1.835 | P=0.476 R=0.501
+  Saved: ./results/figures/mnist_dcgan/samples_epoch050.png
+
+Done. Results in: ./results/checkpoints/mnist_dcgan

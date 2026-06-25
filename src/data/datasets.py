@@ -75,7 +75,7 @@ def get_breast_mnist(batch_size: int = 64, data_root: str = "./data"):
             return len(self.ds)
         def __getitem__(self, idx):
             img, label = self.ds[idx]
-            return img, label.squeeze().long()
+            return img, torch.tensor(label).squeeze().long()
 
     return (
         DataLoader(FlatLabelDataset(train), batch_size=batch_size, shuffle=True,

@@ -47,3 +47,20 @@ Epoch 036/50 | D: +0.5401 | G: +3.1103 | Time: 9.9s
 Epoch 037/50 | D: +0.5195 | G: +3.1123 | Time: 9.0s
 Epoch 038/50 | D: +0.5125 | G: +3.2062 | Time: 8.8s
 Epoch 039/50 | D: +0.4994 | G: +3.1850 | Time: 9.3s
+Epoch 040/50 | D: +0.4857 | G: +3.2745 | Time: 8.6s
+  → FID=57.60 | IS=2.517 | P=0.266 R=0.190
+  Saved: ./results/figures/fashionmnist_dcgan/samples_epoch040.png
+Epoch 041/50 | D: +0.4694 | G: +3.2724 | Time: 8.8s
+Epoch 042/50 | D: +0.4493 | G: +3.3188 | Time: 8.0s
+Epoch 043/50 | D: +0.4483 | G: +3.4350 | Time: 8.1s
+Epoch 044/50 | D: +0.4343 | G: +3.4632 | Time: 7.8s
+Epoch 045/50 | D: +0.4131 | G: +3.4506 | Time: 7.8s
+Epoch 046/50 | D: +0.4140 | G: +3.5008 | Time: 7.3s
+Epoch 047/50 | D: +0.4098 | G: +3.5504 | Time: 9.0s
+Epoch 048/50 | D: +0.3908 | G: +3.6403 | Time: 8.2s
+Epoch 049/50 | D: +0.3764 | G: +3.6488 | Time: 8.3s
+Epoch 050/50 | D: +0.3796 | G: +3.6473 | Time: 8.7s
+  → FID=55.07 | IS=2.458 | P=0.303 R=0.235
+  Saved: ./results/figures/fashionmnist_dcgan/samples_epoch050.png
+
+Done. Results in: ./results/checkpoints/fashionmnist_dcgan

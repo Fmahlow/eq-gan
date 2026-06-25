@@ -10,3 +10,7 @@ build/
 venv/
 *.ipynb_checkpoints/
 .DS_Store
+# large model weights
+results/checkpoints/**/*.pt
+# raw datasets
+data/

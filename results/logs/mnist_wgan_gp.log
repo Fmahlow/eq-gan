@@ -1,0 +1,66 @@
+Device: cuda | Dataset: mnist | Model: wgan_gp
+Classes: 10 | Batches/epoch: 79
+Epoch 001/50 | D: -9.4292 | G: +2.7386 | Time: 18.7s
+Epoch 002/50 | D: -3.3755 | G: -0.5744 | Time: 15.9s
+Epoch 003/50 | D: -4.4482 | G: +2.8581 | Time: 13.3s
+Epoch 004/50 | D: -4.6861 | G: +1.2334 | Time: 17.4s
+Epoch 005/50 | D: -4.3147 | G: +4.4057 | Time: 16.5s
+Epoch 006/50 | D: -5.4345 | G: +12.8071 | Time: 17.7s
+Epoch 007/50 | D: -5.6434 | G: +1.6011 | Time: 17.0s
+Epoch 008/50 | D: -6.7338 | G: +24.9882 | Time: 16.2s
+Epoch 009/50 | D: -5.1084 | G: +22.3256 | Time: 15.6s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 010/50 | D: -7.3369 | G: +6.6855 | Time: 17.2s
+  → FID=73.50 | IS=2.087 | P=0.126 R=0.271
+  Saved: ./results/figures/mnist_wgan_gp/samples_epoch010.png
+Epoch 011/50 | D: -11.2685 | G: +18.0490 | Time: 17.2s
+Epoch 012/50 | D: -8.0672 | G: +42.2943 | Time: 18.0s
+Epoch 013/50 | D: -11.9353 | G: +31.7682 | Time: 17.8s
+Epoch 014/50 | D: -14.8335 | G: +31.7204 | Time: 18.8s
+Epoch 015/50 | D: -13.5471 | G: +24.4366 | Time: 19.1s
+Epoch 016/50 | D: -17.6370 | G: +35.3773 | Time: 16.1s
+Epoch 017/50 | D: -14.8323 | G: +14.9309 | Time: 18.3s
+Epoch 018/50 | D: -28.2749 | G: +46.7547 | Time: 15.9s
+Epoch 019/50 | D: -29.5283 | G: -27.1607 | Time: 20.0s
+Epoch 020/50 | D: -46.7370 | G: +68.1482 | Time: 17.3s
+  → FID=138.48 | IS=1.969 | P=0.013 R=0.064
+  Saved: ./results/figures/mnist_wgan_gp/samples_epoch020.png
+Epoch 021/50 | D: -41.2837 | G: +123.9867 | Time: 13.5s
+Epoch 022/50 | D: -42.0758 | G: +21.4126 | Time: 15.0s
+Epoch 023/50 | D: -80.2402 | G: +125.4976 | Time: 16.6s
+Epoch 024/50 | D: -104.2323 | G: +139.3158 | Time: 14.9s
+Epoch 025/50 | D: -67.0425 | G: +253.0534 | Time: 15.9s
+Epoch 026/50 | D: -108.2564 | G: +333.7695 | Time: 15.6s
+Epoch 027/50 | D: -113.9871 | G: -97.6949 | Time: 15.2s
+Epoch 028/50 | D: -146.7203 | G: -9.3632 | Time: 16.8s
+Epoch 029/50 | D: -110.9446 | G: +117.5706 | Time: 18.5s
+Epoch 030/50 | D: -134.7138 | G: +63.3228 | Time: 16.3s
+  → FID=205.71 | IS=1.639 | P=0.000 R=0.000
+  Saved: ./results/figures/mnist_wgan_gp/samples_epoch030.png
+Epoch 031/50 | D: -261.1765 | G: +79.3957 | Time: 3.6s
+Epoch 032/50 | D: -229.1641 | G: -22.6248 | Time: 3.6s
+Epoch 033/50 | D: -303.3340 | G: +105.8035 | Time: 3.6s
+Epoch 034/50 | D: -318.4493 | G: +443.8638 | Time: 3.7s
+Epoch 035/50 | D: -287.9200 | G: +535.8797 | Time: 3.5s
+Epoch 036/50 | D: -127.4282 | G: +545.0682 | Time: 3.6s
+Epoch 037/50 | D: -303.0921 | G: -33.9690 | Time: 7.8s
+Epoch 038/50 | D: -253.8813 | G: +905.8045 | Time: 7.5s
+Epoch 039/50 | D: -385.5249 | G: +276.4816 | Time: 7.5s
+Epoch 040/50 | D: -240.0201 | G: +372.0880 | Time: 7.6s
+  → FID=226.51 | IS=1.442 | P=0.000 R=0.000
+  Saved: ./results/figures/mnist_wgan_gp/samples_epoch040.png
+Epoch 041/50 | D: -219.8414 | G: +898.5353 | Time: 6.1s
+Epoch 042/50 | D: -373.0465 | G: +638.1911 | Time: 6.1s
+Epoch 043/50 | D: -273.4898 | G: +899.7050 | Time: 6.2s
+Epoch 044/50 | D: -366.3155 | G: +995.4415 | Time: 5.9s
+Epoch 045/50 | D: -321.1134 | G: +419.5989 | Time: 6.4s
+Epoch 046/50 | D: -391.7757 | G: +817.5518 | Time: 6.7s
+Epoch 047/50 | D: -478.4378 | G: +265.2966 | Time: 6.3s
+Epoch 048/50 | D: -692.2885 | G: +177.5858 | Time: 6.2s
+Epoch 049/50 | D: -313.6002 | G: +1392.0560 | Time: 6.3s
+Epoch 050/50 | D: -399.7490 | G: +1213.1683 | Time: 6.0s
+  → FID=166.11 | IS=1.906 | P=0.006 R=0.007
+  Saved: ./results/figures/mnist_wgan_gp/samples_epoch050.png
+
+Done. Results in: ./results/checkpoints/mnist_wgan_gp

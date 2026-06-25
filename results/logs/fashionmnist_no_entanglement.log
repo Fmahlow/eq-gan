@@ -1,3 +1,80 @@
 Device: cuda
 Dataset: fashionmnist | Mode: no_entanglement | Epochs: 50 | Train subset: 5000
 Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -14.0537 | G: +4.7656 | GP: 0.2455 | Time: 172.6s
+Epoch 002/50 | D: -15.3569 | G: +0.7982 | GP: 0.3254 | Time: 172.8s
+Epoch 003/50 | D: -12.2894 | G: +0.2580 | GP: 0.2265 | Time: 172.3s
+Epoch 004/50 | D: -10.7622 | G: +0.3411 | GP: 0.1930 | Time: 177.4s
+Epoch 005/50 | D: -9.6200 | G: +2.0325 | GP: 0.1693 | Time: 172.4s
+Epoch 006/50 | D: -8.8657 | G: +2.5790 | GP: 0.1570 | Time: 173.0s
+Epoch 007/50 | D: -8.1257 | G: +2.3409 | GP: 0.1223 | Time: 173.5s
+Epoch 008/50 | D: -5.9200 | G: -1.2306 | GP: 0.0663 | Time: 174.2s
+Epoch 009/50 | D: -3.9421 | G: +1.7720 | GP: 0.0387 | Time: 173.0s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 010/50 | D: -4.5245 | G: +7.5648 | GP: 0.0258 | Time: 176.6s
+    FID=242.83 | IS=1.461±0.131 | P=0.076 R=0.000
+  Saved: ./results/figures/fashionmnist_no_entanglement/samples_epoch010.png
+  → FID @ epoch 10: 242.83
+Epoch 011/50 | D: -3.7543 | G: +1.2784 | GP: 0.0188 | Time: 179.7s
+Epoch 012/50 | D: -4.6642 | G: +3.2297 | GP: 0.0184 | Time: 176.7s
+Epoch 013/50 | D: -3.4787 | G: +9.0481 | GP: 0.0181 | Time: 183.1s
+Epoch 014/50 | D: -4.4354 | G: +10.5451 | GP: 0.0156 | Time: 178.2s
+Epoch 015/50 | D: -5.4856 | G: +2.9806 | GP: 0.0175 | Time: 175.2s
+Epoch 016/50 | D: -4.7765 | G: +10.9909 | GP: 0.0183 | Time: 171.8s
+Epoch 017/50 | D: -3.9012 | G: +23.7857 | GP: 0.0148 | Time: 174.9s
+Epoch 018/50 | D: -5.8379 | G: +16.1031 | GP: 0.0163 | Time: 171.2s
+Epoch 019/50 | D: -3.9263 | G: +12.5020 | GP: 0.0162 | Time: 170.4s
+Epoch 020/50 | D: -5.4177 | G: +16.0819 | GP: 0.0163 | Time: 169.7s
+    FID=207.02 | IS=1.699±0.138 | P=0.091 R=0.000
+  Saved: ./results/figures/fashionmnist_no_entanglement/samples_epoch020.png
+  → FID @ epoch 20: 207.02
+Epoch 021/50 | D: -5.9065 | G: +4.0464 | GP: 0.0154 | Time: 172.1s
+Epoch 022/50 | D: -7.4562 | G: +1.1668 | GP: 0.0157 | Time: 174.7s
+Epoch 023/50 | D: -4.9974 | G: +7.1972 | GP: 0.0164 | Time: 170.2s
+Epoch 024/50 | D: -4.0059 | G: +13.3009 | GP: 0.0165 | Time: 171.8s
+Epoch 025/50 | D: -7.9504 | G: +19.4139 | GP: 0.0171 | Time: 172.2s
+Epoch 026/50 | D: -10.2632 | G: +14.4032 | GP: 0.0199 | Time: 173.5s
+Epoch 027/50 | D: -4.2553 | G: +31.7593 | GP: 0.0149 | Time: 173.9s
+Epoch 028/50 | D: -8.6625 | G: +49.3932 | GP: 0.0174 | Time: 172.0s
+Epoch 029/50 | D: -10.7941 | G: +33.2645 | GP: 0.0192 | Time: 174.8s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 030/50 | D: -9.4959 | G: +32.1526 | GP: 0.0203 | Time: 173.5s
+    FID=188.02 | IS=1.857±0.225 | P=0.200 R=0.000
+  Saved: ./results/figures/fashionmnist_no_entanglement/samples_epoch030.png
+  → FID @ epoch 30: 188.02
+Epoch 031/50 | D: -4.8512 | G: +17.3175 | GP: 0.0162 | Time: 174.2s
+Epoch 032/50 | D: -11.4971 | G: +25.4892 | GP: 0.0174 | Time: 175.4s
+Epoch 033/50 | D: -12.0827 | G: +55.0976 | GP: 0.0163 | Time: 174.5s
+Epoch 034/50 | D: -11.1238 | G: +45.1458 | GP: 0.0196 | Time: 172.8s
+Epoch 035/50 | D: -12.9790 | G: +31.0795 | GP: 0.0154 | Time: 171.9s
+Epoch 036/50 | D: -15.6721 | G: +43.2714 | GP: 0.0177 | Time: 173.2s
+Epoch 037/50 | D: -18.3956 | G: +25.6728 | GP: 0.0250 | Time: 179.9s
+Epoch 038/50 | D: -14.6686 | G: +3.8084 | GP: 0.0270 | Time: 179.9s
+Epoch 039/50 | D: -11.8864 | G: +28.6055 | GP: 0.0197 | Time: 181.4s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 040/50 | D: -12.9405 | G: +29.6453 | GP: 0.0176 | Time: 172.8s
+    FID=203.27 | IS=1.903±0.228 | P=0.229 R=0.000
+  Saved: ./results/figures/fashionmnist_no_entanglement/samples_epoch040.png
+  → FID @ epoch 40: 203.27
+Epoch 041/50 | D: -13.8764 | G: +25.1931 | GP: 0.0203 | Time: 173.1s
+Epoch 042/50 | D: -14.8309 | G: +3.5406 | GP: 0.0207 | Time: 172.4s
+Epoch 043/50 | D: -17.7125 | G: +47.0808 | GP: 0.0207 | Time: 174.4s
+Epoch 044/50 | D: -12.0060 | G: +54.2485 | GP: 0.0190 | Time: 174.6s
+Epoch 045/50 | D: -23.2695 | G: +49.2936 | GP: 0.0156 | Time: 175.3s
+Epoch 046/50 | D: -26.0082 | G: +54.3839 | GP: 0.0205 | Time: 173.1s
+Epoch 047/50 | D: -20.4477 | G: +7.3834 | GP: 0.0213 | Time: 180.6s
+Epoch 048/50 | D: -14.0180 | G: +21.1669 | GP: 0.0201 | Time: 171.3s
+Epoch 049/50 | D: -23.8071 | G: +26.2823 | GP: 0.0249 | Time: 176.0s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 050/50 | D: -15.2094 | G: +26.4571 | GP: 0.0179 | Time: 172.1s
+    FID=173.72 | IS=1.911±0.116 | P=0.215 R=0.000
+  Saved: ./results/figures/fashionmnist_no_entanglement/samples_epoch050.png
+  → FID @ epoch 50: 173.72
+  Saved: ./results/figures/fashionmnist_no_entanglement/loss_curves.png
+  Saved: ./results/figures/fashionmnist_no_entanglement/fid_curve.png
+
+Done. Results in: ./results/checkpoints/fashionmnist_no_entanglement

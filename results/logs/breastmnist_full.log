@@ -3,36 +3,76 @@ Dataset: breastmnist | Mode: full | Epochs: 50 | Train subset: 5000
 Using downloaded and verified file: ./data/breastmnist.npz
 Using downloaded and verified file: ./data/breastmnist.npz
 Classes: 2 | Batches/epoch: 18
-Traceback (most recent call last):
-  File "/workspace/quantum-gan-paper/experiments/run_experiment.py", line 158, in <module>
-    main()
-  File "/workspace/quantum-gan-paper/experiments/run_experiment.py", line 121, in main
-    evaluator.cache_real_features(args.dataset, test_loader)
-  File "/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py", line 179, in cache_real_features
-    for imgs, _ in real_loader:
-  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/dataloader.py", line 630, in __next__
-    data = self._next_data()
-           ^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/dataloader.py", line 1344, in _next_data
-    return self._process_data(data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/dataloader.py", line 1370, in _process_data
-    data.reraise()
-  File "/usr/local/lib/python3.11/dist-packages/torch/_utils.py", line 706, in reraise
-    raise exception
-AttributeError: Caught AttributeError in DataLoader worker process 0.
-Original Traceback (most recent call last):
-  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/_utils/worker.py", line 309, in _worker_loop
-    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
-           ^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
-    data = [self.dataset[idx] for idx in possibly_batched_index]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.11/dist-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
-    data = [self.dataset[idx] for idx in possibly_batched_index]
-            ~~~~~~~~~~~~^^^^^
-  File "/workspace/quantum-gan-paper/experiments/../src/data/datasets.py", line 78, in __getitem__
-    return img, label.squeeze().long()
-                ^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'numpy.ndarray' object has no attribute 'long'
+Epoch 001/50 | D: -11.5098 | G: +3.6443 | GP: 0.0906 | Time: 61.7s
+Epoch 002/50 | D: -20.4359 | G: +6.2575 | GP: 0.1835 | Time: 143.0s
+Epoch 003/50 | D: -25.3011 | G: +5.7805 | GP: 0.2751 | Time: 438.3s
+Epoch 004/50 | D: -28.2224 | G: +5.8600 | GP: 0.1993 | Time: 326.4s
+Epoch 005/50 | D: -31.8825 | G: +8.8367 | GP: 0.1793 | Time: 681.8s
+Epoch 006/50 | D: -35.0306 | G: +3.2107 | GP: 0.1316 | Time: 404.5s
+Epoch 007/50 | D: -41.5063 | G: +8.8563 | GP: 0.0972 | Time: 470.5s
+Epoch 008/50 | D: -44.0281 | G: +9.6562 | GP: 0.0954 | Time: 669.0s
+Epoch 009/50 | D: -53.4213 | G: +8.6004 | GP: 0.0919 | Time: 847.9s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 010/50 | D: -58.0321 | G: +16.2342 | GP: 0.0818 | Time: 444.9s
+    FID=381.62 | IS=1.361±0.039 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_full/samples_epoch010.png
+  → FID @ epoch 10: 381.62
+Epoch 011/50 | D: -57.2424 | G: +6.0497 | GP: 0.0844 | Time: 453.3s
+Epoch 012/50 | D: -60.5099 | G: -0.5771 | GP: 0.0780 | Time: 674.7s
+Epoch 013/50 | D: -74.2032 | G: +9.0538 | GP: 0.0636 | Time: 779.5s
+Epoch 014/50 | D: -62.9827 | G: +5.1537 | GP: 0.0515 | Time: 345.7s
+Epoch 015/50 | D: -81.9567 | G: -0.1907 | GP: 0.0473 | Time: 462.4s
+Epoch 016/50 | D: -77.3128 | G: -0.6723 | GP: 0.0411 | Time: 822.1s
+Epoch 017/50 | D: -92.7650 | G: +17.7904 | GP: 0.0469 | Time: 348.7s
+Epoch 018/50 | D: -99.9724 | G: -5.5320 | GP: 0.0526 | Time: 302.8s
+Epoch 019/50 | D: -95.3748 | G: -4.7014 | GP: 0.0471 | Time: 278.3s
+Epoch 020/50 | D: -111.1477 | G: -7.0896 | GP: 0.0450 | Time: 106.6s
+    FID=184.47 | IS=1.640±0.057 | P=0.010 R=0.000
+  Saved: ./results/figures/breastmnist_full/samples_epoch020.png
+  → FID @ epoch 20: 184.47
+Epoch 021/50 | D: -115.9861 | G: +3.4131 | GP: 0.0478 | Time: 110.8s
+Epoch 022/50 | D: -120.0907 | G: +15.7052 | GP: 0.0446 | Time: 265.9s
+Epoch 023/50 | D: -132.9703 | G: -4.7297 | GP: 0.0413 | Time: 118.1s
+Epoch 024/50 | D: -141.6666 | G: +6.1731 | GP: 0.0420 | Time: 109.1s
+Epoch 025/50 | D: -99.3891 | G: -14.1625 | GP: 0.0385 | Time: 60.4s
+Epoch 026/50 | D: -153.1203 | G: -18.8785 | GP: 0.0432 | Time: 42.8s
+Epoch 027/50 | D: -158.0384 | G: +0.0436 | GP: 0.0464 | Time: 38.4s
+Epoch 028/50 | D: -184.4473 | G: -4.0310 | GP: 0.0372 | Time: 95.2s
+Epoch 029/50 | D: -168.8532 | G: +3.0283 | GP: 0.0422 | Time: 175.5s
+Epoch 030/50 | D: -181.4807 | G: -24.1211 | GP: 0.0359 | Time: 140.0s
+    FID=215.99 | IS=1.722±0.067 | P=0.024 R=0.000
+  Saved: ./results/figures/breastmnist_full/samples_epoch030.png
+  → FID @ epoch 30: 215.99
+Epoch 031/50 | D: -185.9266 | G: +34.8796 | GP: 0.0466 | Time: 13.7s
+Epoch 032/50 | D: -203.5596 | G: -5.6421 | GP: 0.0427 | Time: 14.1s
+Epoch 033/50 | D: -138.4670 | G: -12.3338 | GP: 0.0358 | Time: 14.0s
+Epoch 034/50 | D: -206.7917 | G: +7.7660 | GP: 0.0536 | Time: 14.2s
+Epoch 035/50 | D: -210.9804 | G: +28.0575 | GP: 0.0498 | Time: 13.8s
+Epoch 036/50 | D: -246.1691 | G: +9.8150 | GP: 0.0472 | Time: 12.8s
+Epoch 037/50 | D: -204.6729 | G: +22.1445 | GP: 0.0420 | Time: 13.0s
+Epoch 038/50 | D: -253.4224 | G: +20.4053 | GP: 0.0478 | Time: 12.4s
+Epoch 039/50 | D: -240.1029 | G: +25.6681 | GP: 0.0508 | Time: 13.6s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 040/50 | D: -256.2986 | G: +60.9943 | GP: 0.0511 | Time: 13.2s
+    FID=209.71 | IS=1.801±0.205 | P=0.014 R=0.000
+  Saved: ./results/figures/breastmnist_full/samples_epoch040.png
+  → FID @ epoch 40: 209.71
+Epoch 041/50 | D: -272.3445 | G: +1.8635 | GP: 0.0479 | Time: 15.6s
+Epoch 042/50 | D: -273.5643 | G: -21.6009 | GP: 0.0415 | Time: 14.3s
+Epoch 043/50 | D: -325.7002 | G: -7.9330 | GP: 0.0409 | Time: 14.7s
+Epoch 044/50 | D: -204.9980 | G: -7.8826 | GP: 0.0490 | Time: 13.9s
+Epoch 045/50 | D: -289.7759 | G: -1.8602 | GP: 0.0425 | Time: 13.2s
+Epoch 046/50 | D: -300.2052 | G: +26.5394 | GP: 0.0456 | Time: 12.8s
+Epoch 047/50 | D: -283.3885 | G: -2.3756 | GP: 0.0479 | Time: 12.9s
+Epoch 048/50 | D: -322.5057 | G: +21.7199 | GP: 0.0397 | Time: 12.7s
+Epoch 049/50 | D: -251.2153 | G: -15.9930 | GP: 0.0394 | Time: 12.8s
+Epoch 050/50 | D: -328.4338 | G: +8.2480 | GP: 0.0391 | Time: 13.2s
+    FID=226.79 | IS=1.664±0.188 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_full/samples_epoch050.png
+  → FID @ epoch 50: 226.79
+  Saved: ./results/figures/breastmnist_full/loss_curves.png
+  Saved: ./results/figures/breastmnist_full/fid_curve.png
 
+Done. Results in: ./results/checkpoints/breastmnist_full

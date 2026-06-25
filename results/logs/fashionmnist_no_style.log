@@ -1,3 +1,74 @@
 Device: cuda
 Dataset: fashionmnist | Mode: no_style | Epochs: 50 | Train subset: 5000
 Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -11.0794 | G: +0.5181 | GP: 0.1764 | Time: 135.6s
+Epoch 002/50 | D: -13.7479 | G: +0.5055 | GP: 0.2629 | Time: 135.8s
+Epoch 003/50 | D: -13.7396 | G: +1.1730 | GP: 0.2806 | Time: 133.0s
+Epoch 004/50 | D: -14.8065 | G: +1.0158 | GP: 0.2896 | Time: 135.4s
+Epoch 005/50 | D: -14.8741 | G: +0.4285 | GP: 0.3028 | Time: 134.8s
+Epoch 006/50 | D: -15.9666 | G: +0.4003 | GP: 0.3105 | Time: 148.7s
+Epoch 007/50 | D: -15.2109 | G: +0.1644 | GP: 0.3257 | Time: 152.8s
+Epoch 008/50 | D: -15.7817 | G: -3.4285 | GP: 0.3307 | Time: 137.5s
+Epoch 009/50 | D: -15.9410 | G: +0.4507 | GP: 0.3372 | Time: 137.6s
+/workspace/quantum-gan-paper/experiments/../src/evaluation/metrics.py:69: LinAlgWarning: Matrix is singular. The result might be inaccurate or the array might not have a square root.
+  covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+Epoch 010/50 | D: -16.7688 | G: -0.0864 | GP: 0.3326 | Time: 142.4s
+    FID=236.14 | IS=2.516±0.070 | P=0.031 R=0.000
+  Saved: ./results/figures/fashionmnist_no_style/samples_epoch010.png
+  → FID @ epoch 10: 236.14
+Epoch 011/50 | D: -17.1462 | G: -6.5185 | GP: 0.3536 | Time: 148.9s
+Epoch 012/50 | D: -16.8706 | G: -4.7360 | GP: 0.3464 | Time: 149.9s
+Epoch 013/50 | D: -16.0574 | G: -1.6233 | GP: 0.3538 | Time: 145.3s
+Epoch 014/50 | D: -17.2661 | G: -11.3299 | GP: 0.3507 | Time: 139.2s
+Epoch 015/50 | D: -18.5617 | G: -13.5121 | GP: 0.3563 | Time: 135.6s
+Epoch 016/50 | D: -17.1857 | G: -12.0396 | GP: 0.3706 | Time: 140.3s
+Epoch 017/50 | D: -16.9576 | G: -13.9172 | GP: 0.3647 | Time: 138.5s
+Epoch 018/50 | D: -18.6938 | G: -8.8882 | GP: 0.3565 | Time: 144.7s
+Epoch 019/50 | D: -19.2152 | G: -21.1897 | GP: 0.3600 | Time: 139.4s
+Epoch 020/50 | D: -19.3504 | G: -19.4150 | GP: 0.3638 | Time: 135.2s
+    FID=256.04 | IS=2.821±0.177 | P=0.023 R=0.000
+  Saved: ./results/figures/fashionmnist_no_style/samples_epoch020.png
+  → FID @ epoch 20: 256.04
+Epoch 021/50 | D: -20.5294 | G: -26.7078 | GP: 0.3687 | Time: 136.9s
+Epoch 022/50 | D: -18.4129 | G: -20.5350 | GP: 0.3628 | Time: 135.8s
+Epoch 023/50 | D: -19.7925 | G: -19.8534 | GP: 0.3742 | Time: 136.6s
+Epoch 024/50 | D: -19.7258 | G: -26.6384 | GP: 0.3672 | Time: 140.1s
+Epoch 025/50 | D: -19.8642 | G: -9.2705 | GP: 0.3705 | Time: 137.5s
+Epoch 026/50 | D: -18.7050 | G: -17.6595 | GP: 0.3750 | Time: 136.6s
+Epoch 027/50 | D: -20.3873 | G: -13.1471 | GP: 0.3721 | Time: 138.3s
+Epoch 028/50 | D: -20.7225 | G: -21.5008 | GP: 0.3740 | Time: 138.1s
+Epoch 029/50 | D: -20.6785 | G: -29.1607 | GP: 0.3800 | Time: 141.0s
+Epoch 030/50 | D: -24.7746 | G: -9.4565 | GP: 0.3652 | Time: 136.6s
+    FID=210.61 | IS=2.889±0.152 | P=0.002 R=0.000
+  Saved: ./results/figures/fashionmnist_no_style/samples_epoch030.png
+  → FID @ epoch 30: 210.61
+Epoch 031/50 | D: -19.2805 | G: -24.8376 | GP: 0.3740 | Time: 142.3s
+Epoch 032/50 | D: -26.2785 | G: -14.8940 | GP: 0.3699 | Time: 135.9s
+Epoch 033/50 | D: -25.9003 | G: -27.0752 | GP: 0.3753 | Time: 138.3s
+Epoch 034/50 | D: -26.4266 | G: -30.1506 | GP: 0.3723 | Time: 138.3s
+Epoch 035/50 | D: -25.5641 | G: -28.5520 | GP: 0.3756 | Time: 137.6s
+Epoch 036/50 | D: -20.0483 | G: -38.5283 | GP: 0.3768 | Time: 135.1s
+Epoch 037/50 | D: -22.6360 | G: -40.0238 | GP: 0.3803 | Time: 135.7s
+Epoch 038/50 | D: -26.3522 | G: -55.5830 | GP: 0.3726 | Time: 139.2s
+Epoch 039/50 | D: -22.6922 | G: -61.8852 | GP: 0.3818 | Time: 136.9s
+Epoch 040/50 | D: -21.1400 | G: -57.1889 | GP: 0.3818 | Time: 138.4s
+    FID=201.52 | IS=2.533±0.080 | P=0.029 R=0.000
+  Saved: ./results/figures/fashionmnist_no_style/samples_epoch040.png
+  → FID @ epoch 40: 201.52
+Epoch 041/50 | D: -22.3661 | G: -47.7345 | GP: 0.3767 | Time: 148.1s
+Epoch 042/50 | D: -17.9649 | G: -51.3741 | GP: 0.3817 | Time: 140.3s
+Epoch 043/50 | D: -23.2396 | G: -49.6998 | GP: 0.3775 | Time: 151.9s
+Epoch 044/50 | D: -16.5485 | G: -44.3666 | GP: 0.3733 | Time: 145.0s
+Epoch 045/50 | D: -25.1342 | G: -56.3937 | GP: 0.3782 | Time: 154.7s
+Epoch 046/50 | D: -34.5689 | G: -59.4432 | GP: 0.3563 | Time: 156.8s
+Epoch 047/50 | D: -26.9274 | G: -65.3740 | GP: 0.3711 | Time: 137.9s
+Epoch 048/50 | D: -20.9522 | G: -68.4247 | GP: 0.3686 | Time: 138.1s
+Epoch 049/50 | D: -27.2311 | G: -51.2260 | GP: 0.3707 | Time: 141.9s
+Epoch 050/50 | D: -31.8396 | G: -55.6624 | GP: 0.3719 | Time: 139.4s
+    FID=219.47 | IS=2.801±0.193 | P=0.022 R=0.001
+  Saved: ./results/figures/fashionmnist_no_style/samples_epoch050.png
+  → FID @ epoch 50: 219.47
+  Saved: ./results/figures/fashionmnist_no_style/loss_curves.png
+  Saved: ./results/figures/fashionmnist_no_style/fid_curve.png
+
+Done. Results in: ./results/checkpoints/fashionmnist_no_style
