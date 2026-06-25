@@ -2,3 +2,7 @@ Device: cuda
 Dataset: mnist | Mode: no_entanglement | Epochs: 50 | Train subset: 5000
 Classes: 10 | Batches/epoch: 157
 Epoch 001/50 | D: -16.0682 | G: +10.2184 | GP: 0.2992 | Time: 190.5s
+Epoch 002/50 | D: -12.0853 | G: +7.6651 | GP: 0.2123 | Time: 186.1s
+Epoch 003/50 | D: -11.3612 | G: +9.1906 | GP: 0.1756 | Time: 189.2s
+Epoch 004/50 | D: -12.7404 | G: +15.7055 | GP: 0.1867 | Time: 190.3s
+Epoch 005/50 | D: -13.5874 | G: +20.4641 | GP: 0.1930 | Time: 197.9s
