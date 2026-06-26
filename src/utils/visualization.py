@@ -61,6 +61,26 @@ def plot_generated_grid(generator, n_classes: int, device: torch.device,
     generator.train()
 
 
+def plot_image_grid(imgs: "torch.Tensor", save_path: str, title: str = None):
+    """Save a (N, C, H, W) or (N, H, W) tensor as a single-row image grid."""
+    import torch
+    imgs = imgs.float()
+    if imgs.min() < 0:
+        imgs = (imgs + 1) / 2  # [-1,1] → [0,1]
+    imgs = imgs.clamp(0, 1)
+    n = imgs.shape[0]
+    fig, axes = plt.subplots(1, n, figsize=(n * 0.8, 0.9))
+    if n == 1:
+        axes = [axes]
+    for ax, img in zip(axes, imgs):
+        ax.imshow(img.squeeze().numpy(), cmap="gray", vmin=0, vmax=1)
+        ax.axis("off")
+    if title:
+        plt.suptitle(title, y=1.01, fontsize=8)
+    plt.tight_layout()
+    _savefig(fig, save_path)
+
+
 def plot_fid_curves(histories: dict, save_path: str):
     """FID over training epochs for multiple models."""
     fig, ax = plt.subplots(figsize=FIGSIZE_SINGLE)

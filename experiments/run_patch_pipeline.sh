@@ -3,7 +3,7 @@
 # Waits for mnist_no_entanglement to complete, then runs 3 Patch QGAN experiments.
 
 set -e
-cd /workspace/quantum-gan-paper
+cd /home/mahlow/eq-gan
 export OMP_NUM_THREADS=20
 
 echo "=== Patch QGAN pipeline started: $(date) ==="

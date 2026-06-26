@@ -20,7 +20,7 @@ from src.models.patch_qgan import PatchQGANGenerator
 from src.models.classical_baselines import DCGANDiscriminator, gradient_penalty_classical
 from src.data.datasets import get_dataset
 from src.evaluation.metrics import Evaluator
-from src.utils.visualization import plot_generated_grid, plot_fid_curves
+from src.utils.visualization import plot_image_grid, plot_fid_curves
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -142,7 +142,7 @@ def train(args):
                 )[:8]
                 sample_imgs = generator.sample(8, sample_labels, DEVICE)
             generator.train()
-            plot_generated_grid(
+            plot_image_grid(
                 sample_imgs.cpu(),
                 f"{args.out_dir}/images/{tag}_epoch{epoch:03d}.png",
                 title=f"Patch QGAN – {args.dataset} – epoch {epoch}"

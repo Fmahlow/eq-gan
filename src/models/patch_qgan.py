@@ -13,6 +13,7 @@ import pennylane as qml
 import torch
 import torch.nn as nn
 import numpy as np
+from .parallel_quantum import OptimizedPatchQuantumLayer
 
 N_PATCH_QUBITS = 4
 N_PATCH_LAYERS = 3
@@ -70,7 +71,7 @@ class PatchQuantumLayer(nn.Module):
             patch_outputs.append(torch.stack(samples))  # (B, N_PATCH_QUBITS)
 
         result = torch.stack(patch_outputs, dim=1)  # (B, N_PATCHES, N_PATCH_QUBITS)
-        return result.to(noise_enc.device)
+        return result.float().to(noise_enc.device)
 
 
 class PatchNoiseEncoder(nn.Module):
@@ -141,7 +142,7 @@ class PatchQGANGenerator(nn.Module):
         self.noise_dim  = noise_dim
         self.n_classes  = n_classes
         self.encoder    = PatchNoiseEncoder(noise_dim, n_classes)
-        self.quantum    = PatchQuantumLayer()
+        self.quantum    = OptimizedPatchQuantumLayer()
         self.assembler  = PatchAssembler(img_channels)
 
     def forward(self, z, labels_onehot):

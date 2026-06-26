@@ -21,6 +21,7 @@ from .quantum_circuit import (
     ablation_no_style_circuit,
     N_CONTENT, N_STYLE, N_QUBITS, N_LAYERS,
 )
+from .parallel_quantum import OptimizedEQGANQuantumLayer
 
 
 # ---------------------------------------------------------------------------
@@ -105,7 +106,7 @@ class QuantumLayer(nn.Module):
             outputs.append(torch.stack(out))
 
         result = torch.stack(outputs)  # (B, N_CONTENT) on CPU
-        return result.to(noise_enc.device)  # move back to GPU for decoder
+        return result.float().to(noise_enc.device)  # cast to float32 and move back to GPU for decoder
 
 
 class ClassicalDecoder(nn.Module):
@@ -153,7 +154,7 @@ class EQGANGenerator(nn.Module):
 
         self.content_encoder = ClassicalEncoder(noise_dim)
         self.style_encoder = StyleEncoder(n_classes) if mode != "no_style" else None
-        self.quantum_layer = QuantumLayer(mode=mode)
+        self.quantum_layer = OptimizedEQGANQuantumLayer(mode=mode)
         self.decoder = ClassicalDecoder(img_channels)
 
     def forward(self, z, labels_onehot=None):

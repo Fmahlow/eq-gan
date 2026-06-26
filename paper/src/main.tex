@@ -6,8 +6,6 @@
 \usepackage{booktabs}
 \usepackage{hyperref}
 \usepackage{xcolor}
-\usepackage{algorithm}
-\usepackage{algpseudocode}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{multirow}
@@ -436,7 +434,8 @@ models at epoch 50.
     Best quantum model on FashionMNIST in \textbf{bold}.
     $\dagger$: classical reference, included for context only (not directly comparable
     due to fundamentally different computational substrate).
-    $\star$: pending experiment completion.}
+    $\star$: pending experiment completion.
+    $\ddagger$: training diverged (FID\,$>10^{50}$; IS and precision computed on collapsed distribution).}
   \label{tab:main_results}
   \small
   \begin{tabular}{llcccccccc}
@@ -455,7 +454,7 @@ models at epoch 50.
     \midrule
     \multirow{3}{*}{Ablation}
       & EQ-GAN$_\text{no-style}$ & 219.5 & 2.80 & 0.022 & 0.001 & -- & -- & -- & -- \\
-      & \textbf{EQ-GAN$_\text{no-ent}$} & \textbf{173.7} & \textbf{1.91} & 0.215 & 0.000 & $\star$ & $\star$ & -- & -- \\
+      & \textbf{EQ-GAN$_\text{no-ent}$} & \textbf{173.7} & \textbf{1.91} & 0.215 & 0.000 & div.$^{\ddagger}$ & 1.74 & -- & -- \\
       & EQ-GAN (ours)  & 192.6 & 1.63 & 0.253 & 0.000 & 118.2 & 1.79 & 226.8 & 1.66 \\
     \bottomrule
   \end{tabular}
@@ -470,6 +469,17 @@ gap of 18.9 points (173.7 vs.\ 192.6). This pattern is stable across all five
 evaluated checkpoints (epochs 10, 20, 30, 40, 50), as shown in
 Figure~\ref{fig:fid_curves}, ruling out transient training dynamics as an
 explanation.
+
+On MNIST, the no-entanglement variant encountered severe training instability
+(FID diverges to numerical overflow, IS = 1.74, P = 0.059), while the full
+EQ-GAN trained stably (FID = 118.2, IS = 1.79). We do not interpret this as
+evidence that the entanglement core provides a net benefit: the full EQ-GAN's
+MNIST FID of 118.2 remains 97 points above the DCGAN baseline (21.3), and a
+single training run is insufficient to isolate stability effects from random
+initialization. Rather, we note that the no-entanglement variant's reduced
+circuit expressibility may interact differently with the MNIST gradient landscape
+than with FashionMNIST's, and multi-seed replication would be required to draw
+definitive conclusions about relative stability.
 
 The no-style variant (EQ-GAN$_\text{no-style}$) achieves a higher Inception
 Score (2.80 vs.\ 1.91) but the worst FID (219.5), indicating that the style
