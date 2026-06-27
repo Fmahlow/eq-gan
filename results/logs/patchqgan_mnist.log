@@ -1,0 +1,66 @@
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Dataset: mnist | Patch QGAN | Epochs: 50 | Train subset: 5000
+Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -31.2472 | G: +10.0946 | Time: 483.1s
+Epoch 002/50 | D: -4.7093 | G: +0.5882 | Time: 484.4s
+Epoch 003/50 | D: -11.1399 | G: -0.7708 | Time: 486.3s
+Epoch 004/50 | D: -17.2694 | G: -3.0792 | Time: 487.6s
+Epoch 005/50 | D: -26.0087 | G: -3.3698 | Time: 483.6s
+Epoch 006/50 | D: -55.6097 | G: -3.2661 | Time: 481.3s
+Epoch 007/50 | D: -111.9901 | G: -2.3008 | Time: 479.2s
+Epoch 008/50 | D: -174.1386 | G: -1.0264 | Time: 480.3s
+Epoch 009/50 | D: -234.0332 | G: +1.9367 | Time: 483.7s
+Epoch 010/50 | D: -304.5111 | G: +8.2402 | Time: 484.0s
+      FID=240.29 | IS=1.512±0.098 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch010.png
+Epoch 011/50 | D: -139.5860 | G: +9.1066 | Time: 483.7s
+Epoch 012/50 | D: -71.3525 | G: -5.4091 | Time: 484.2s
+Epoch 013/50 | D: -105.2465 | G: -14.3832 | Time: 485.3s
+Epoch 014/50 | D: -141.3713 | G: -14.5193 | Time: 483.5s
+Epoch 015/50 | D: -170.9672 | G: -16.8941 | Time: 481.7s
+Epoch 016/50 | D: -205.0037 | G: -15.3664 | Time: 481.2s
+Epoch 017/50 | D: -236.2019 | G: -15.3087 | Time: 480.8s
+Epoch 018/50 | D: -252.0485 | G: -11.3241 | Time: 480.4s
+Epoch 019/50 | D: -427.4205 | G: -0.7785 | Time: 480.0s
+Epoch 020/50 | D: -321.0305 | G: -21.3183 | Time: 480.7s
+      FID=190.46 | IS=1.649±0.064 | P=0.002 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch020.png
+Epoch 021/50 | D: -378.1847 | G: -8.6635 | Time: 483.4s
+Epoch 022/50 | D: -396.8316 | G: -14.7968 | Time: 481.9s
+Epoch 023/50 | D: -455.4830 | G: -9.2512 | Time: 481.7s
+Epoch 024/50 | D: -488.0170 | G: -9.3235 | Time: 481.7s
+Epoch 025/50 | D: -526.1567 | G: -8.6883 | Time: 486.3s
+Epoch 026/50 | D: -554.9371 | G: -1.5419 | Time: 483.1s
+Epoch 027/50 | D: -593.9957 | G: +7.7900 | Time: 486.6s
+Epoch 028/50 | D: -620.7954 | G: +7.7752 | Time: 484.4s
+Epoch 029/50 | D: -661.8962 | G: +15.5133 | Time: 484.0s
+Epoch 030/50 | D: -713.3483 | G: +27.9389 | Time: 487.9s
+      FID=176.30 | IS=1.644±0.079 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch030.png
+Epoch 031/50 | D: -753.9457 | G: +42.4801 | Time: 484.6s
+Epoch 032/50 | D: -794.7357 | G: +34.9966 | Time: 481.6s
+Epoch 033/50 | D: -846.9215 | G: +54.6870 | Time: 481.9s
+Epoch 034/50 | D: -872.1533 | G: +70.7569 | Time: 482.9s
+Epoch 035/50 | D: -894.7294 | G: +69.6996 | Time: 481.6s
+Epoch 036/50 | D: -968.5104 | G: +93.6824 | Time: 481.4s
+Epoch 037/50 | D: -1001.0856 | G: +116.4316 | Time: 486.8s
+Epoch 038/50 | D: -1059.8250 | G: +117.8589 | Time: 487.4s
+Epoch 039/50 | D: -1104.6921 | G: +141.5808 | Time: 487.0s
+Epoch 040/50 | D: -1200.5228 | G: +152.1286 | Time: 486.3s
+      FID=164.75 | IS=1.607±0.089 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch040.png
+Epoch 041/50 | D: -1256.8417 | G: +181.6950 | Time: 486.2s
+Epoch 042/50 | D: -1282.8843 | G: +197.1831 | Time: 484.9s
+Epoch 043/50 | D: -1344.1795 | G: +229.9355 | Time: 486.2s
+Epoch 044/50 | D: -1421.6774 | G: +240.0008 | Time: 481.9s
+Epoch 045/50 | D: -1488.6880 | G: +252.3685 | Time: 526.5s
+Epoch 046/50 | D: -1565.6791 | G: +277.6852 | Time: 485.5s
+Epoch 047/50 | D: -1632.8692 | G: +296.7178 | Time: 483.6s
+Epoch 048/50 | D: -1761.0405 | G: +336.5899 | Time: 492.2s
+Epoch 049/50 | D: -1781.0055 | G: +357.3831 | Time: 484.7s
+Epoch 050/50 | D: -1802.7356 | G: +399.0406 | Time: 491.0s
+      FID=163.59 | IS=1.705±0.096 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch050.png
+
+Done. Results in: ./results/checkpoints/patchqgan_mnist

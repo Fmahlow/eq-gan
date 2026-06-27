@@ -434,7 +434,6 @@ models at epoch 50.
     Best quantum model on FashionMNIST in \textbf{bold}.
     $\dagger$: classical reference, included for context only (not directly comparable
     due to fundamentally different computational substrate).
-    $\star$: pending experiment completion.
     $\ddagger$: training diverged (FID\,$>10^{50}$; IS and precision computed on collapsed distribution).}
   \label{tab:main_results}
   \small
@@ -450,7 +449,7 @@ models at epoch 50.
       & WGAN-GP & 296.7 & 1.53 & 0.017 & 0.000 & 166.1 & 1.91 & 348.9 & 1.86 \\
     \midrule
     \multirow{1}{*}{Q-Baseline}
-      & Patch QGAN  & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ & $\star$ \\
+      & Patch QGAN  & 432.2 & 1.72 & 0.000 & 0.000 & 163.6 & 1.70 & 513.1 & 1.38 \\
     \midrule
     \multirow{3}{*}{Ablation}
       & EQ-GAN$_\text{no-style}$ & 219.5 & 2.80 & 0.022 & 0.001 & -- & -- & -- & -- \\
@@ -459,6 +458,25 @@ models at epoch 50.
     \bottomrule
   \end{tabular}
 \end{table*}
+
+\subsection{Comparison with Patch QGAN Baseline}
+
+The Patch QGAN baseline achieves FID of 432.2, 163.6, and 513.1 on
+FashionMNIST, MNIST, and BreastMNIST respectively. EQ-GAN outperforms
+Patch QGAN on all three datasets (192.6 vs.\ 432.2 on FashionMNIST;
+118.2 vs.\ 163.6 on MNIST; 226.8 vs.\ 513.1 on BreastMNIST), demonstrating
+that the hybrid architecture with a shared classical decoder and explicit class
+conditioning is more effective than the original patch-assembly paradigm at
+this scale. Notably, even EQ-GAN$_\text{no-ent}$—the worst-performing
+EQ-GAN variant on MNIST due to training instability—still outperforms
+Patch QGAN on FashionMNIST by a margin of 258.5 FID points. The Patch QGAN's
+Inception Score (1.38--1.72) is consistently lower than or comparable to
+EQ-GAN variants, and Precision and Recall are zero at epoch 50 across all
+datasets, indicating that the generated distribution fails to overlap with the
+real manifold in InceptionV3 feature space. These results suggest that the
+patch-assembly strategy, while compelling as a demonstration of near-term
+quantum hardware, is not the most effective inductive bias for image generation
+at 28$\times$28 resolution.
 
 \subsection{Ablation Study: Does Entanglement Help?}
 

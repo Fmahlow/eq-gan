@@ -1,0 +1,66 @@
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Dataset: fashionmnist | Patch QGAN | Epochs: 50 | Train subset: 5000
+Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -34.9633 | G: +7.2663 | Time: 482.4s
+Epoch 002/50 | D: -88.5823 | G: +2.2342 | Time: 480.4s
+Epoch 003/50 | D: -250.1170 | G: +64.1567 | Time: 482.6s
+Epoch 004/50 | D: -554.6002 | G: +245.9571 | Time: 484.1s
+Epoch 005/50 | D: -876.9257 | G: +400.0921 | Time: 480.1s
+Epoch 006/50 | D: -1223.4442 | G: +578.5721 | Time: 482.4s
+Epoch 007/50 | D: -1432.7654 | G: +731.9989 | Time: 479.5s
+Epoch 008/50 | D: -1959.6684 | G: +940.4785 | Time: 481.4s
+Epoch 009/50 | D: -2086.0918 | G: +1121.6326 | Time: 482.0s
+Epoch 010/50 | D: -2528.4303 | G: +1327.7929 | Time: 482.7s
+      FID=467.38 | IS=1.379±0.030 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch010.png
+Epoch 011/50 | D: -3049.4349 | G: +1504.0171 | Time: 483.0s
+Epoch 012/50 | D: -3424.6520 | G: +1695.1041 | Time: 480.5s
+Epoch 013/50 | D: -3341.8648 | G: +1847.2588 | Time: 482.3s
+Epoch 014/50 | D: -3100.5371 | G: +1932.4757 | Time: 481.1s
+Epoch 015/50 | D: -2982.3297 | G: +2009.6591 | Time: 481.6s
+Epoch 016/50 | D: -1792.6387 | G: +2051.2512 | Time: 481.7s
+Epoch 017/50 | D: -2884.1316 | G: +2080.3760 | Time: 479.2s
+Epoch 018/50 | D: -3312.4490 | G: +2146.9621 | Time: 483.0s
+Epoch 019/50 | D: -2394.5476 | G: +2222.7924 | Time: 481.1s
+Epoch 020/50 | D: -3359.6425 | G: +2344.1794 | Time: 481.1s
+      FID=455.82 | IS=1.494±0.021 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch020.png
+Epoch 021/50 | D: -51.0471 | G: +2411.0612 | Time: 480.9s
+Epoch 022/50 | D: -2858.5890 | G: +2455.5765 | Time: 480.1s
+Epoch 023/50 | D: -4898.8139 | G: +2560.6734 | Time: 481.2s
+Epoch 024/50 | D: -6270.6309 | G: +2754.5609 | Time: 480.8s
+Epoch 025/50 | D: -7120.5052 | G: +3048.9542 | Time: 482.9s
+Epoch 026/50 | D: -8061.2987 | G: +3415.9216 | Time: 479.4s
+Epoch 027/50 | D: -8922.8110 | G: +3830.3493 | Time: 479.6s
+Epoch 028/50 | D: -9820.3231 | G: +4270.3031 | Time: 479.5s
+Epoch 029/50 | D: -10743.6748 | G: +4730.6043 | Time: 478.6s
+Epoch 030/50 | D: -11701.5051 | G: +5209.8479 | Time: 483.4s
+      FID=376.13 | IS=1.760±0.041 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch030.png
+Epoch 031/50 | D: -12694.5151 | G: +5708.7865 | Time: 479.9s
+Epoch 032/50 | D: -13674.6805 | G: +6222.4384 | Time: 478.6s
+Epoch 033/50 | D: -14100.8633 | G: +6632.1634 | Time: 478.8s
+Epoch 034/50 | D: -14549.5246 | G: +6940.1142 | Time: 478.5s
+Epoch 035/50 | D: -15331.4672 | G: +7246.0899 | Time: 478.4s
+Epoch 036/50 | D: -13132.1397 | G: +7549.8644 | Time: 478.6s
+Epoch 037/50 | D: -9700.5779 | G: +7721.1389 | Time: 481.3s
+Epoch 038/50 | D: -14940.0459 | G: +7938.7785 | Time: 482.3s
+Epoch 039/50 | D: -16094.3283 | G: +8175.1704 | Time: 483.2s
+Epoch 040/50 | D: -18907.6686 | G: +8518.2908 | Time: 484.7s
+      FID=384.38 | IS=1.408±0.029 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch040.png
+Epoch 041/50 | D: -20347.9115 | G: +9096.0243 | Time: 484.1s
+Epoch 042/50 | D: -21173.9622 | G: +9533.4527 | Time: 483.8s
+Epoch 043/50 | D: -22596.2822 | G: +10016.8108 | Time: 485.8s
+Epoch 044/50 | D: -24202.8855 | G: +10650.5593 | Time: 485.3s
+Epoch 045/50 | D: -25650.0023 | G: +11345.8648 | Time: 482.6s
+Epoch 046/50 | D: -27090.4904 | G: +12060.0410 | Time: 482.6s
+Epoch 047/50 | D: -28569.5985 | G: +12795.6945 | Time: 482.8s
+Epoch 048/50 | D: -30081.2630 | G: +13551.0326 | Time: 480.7s
+Epoch 049/50 | D: -31623.0507 | G: +14326.4491 | Time: 483.0s
+Epoch 050/50 | D: -33195.0620 | G: +15119.2761 | Time: 483.2s
+      FID=432.16 | IS=1.719±0.055 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch050.png
+
+Done. Results in: ./results/checkpoints/patchqgan_fashionmnist
