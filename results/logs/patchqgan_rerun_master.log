@@ -1,0 +1,214 @@
+=== run_patchqgan_only started: Fri Jun 26 22:12:45 -03 2026 ===
+
+>>> [patchqgan / fashionmnist] started: Fri Jun 26 22:12:45 -03 2026
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Dataset: fashionmnist | Patch QGAN | Epochs: 50 | Train subset: 5000
+Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -34.9633 | G: +7.2663 | Time: 482.4s
+Epoch 002/50 | D: -88.5823 | G: +2.2342 | Time: 480.4s
+Epoch 003/50 | D: -250.1170 | G: +64.1567 | Time: 482.6s
+Epoch 004/50 | D: -554.6002 | G: +245.9571 | Time: 484.1s
+Epoch 005/50 | D: -876.9257 | G: +400.0921 | Time: 480.1s
+Epoch 006/50 | D: -1223.4442 | G: +578.5721 | Time: 482.4s
+Epoch 007/50 | D: -1432.7654 | G: +731.9989 | Time: 479.5s
+Epoch 008/50 | D: -1959.6684 | G: +940.4785 | Time: 481.4s
+Epoch 009/50 | D: -2086.0918 | G: +1121.6326 | Time: 482.0s
+Epoch 010/50 | D: -2528.4303 | G: +1327.7929 | Time: 482.7s
+      FID=467.38 | IS=1.379±0.030 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch010.png
+Epoch 011/50 | D: -3049.4349 | G: +1504.0171 | Time: 483.0s
+Epoch 012/50 | D: -3424.6520 | G: +1695.1041 | Time: 480.5s
+Epoch 013/50 | D: -3341.8648 | G: +1847.2588 | Time: 482.3s
+Epoch 014/50 | D: -3100.5371 | G: +1932.4757 | Time: 481.1s
+Epoch 015/50 | D: -2982.3297 | G: +2009.6591 | Time: 481.6s
+Epoch 016/50 | D: -1792.6387 | G: +2051.2512 | Time: 481.7s
+Epoch 017/50 | D: -2884.1316 | G: +2080.3760 | Time: 479.2s
+Epoch 018/50 | D: -3312.4490 | G: +2146.9621 | Time: 483.0s
+Epoch 019/50 | D: -2394.5476 | G: +2222.7924 | Time: 481.1s
+Epoch 020/50 | D: -3359.6425 | G: +2344.1794 | Time: 481.1s
+      FID=455.82 | IS=1.494±0.021 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch020.png
+Epoch 021/50 | D: -51.0471 | G: +2411.0612 | Time: 480.9s
+Epoch 022/50 | D: -2858.5890 | G: +2455.5765 | Time: 480.1s
+Epoch 023/50 | D: -4898.8139 | G: +2560.6734 | Time: 481.2s
+Epoch 024/50 | D: -6270.6309 | G: +2754.5609 | Time: 480.8s
+Epoch 025/50 | D: -7120.5052 | G: +3048.9542 | Time: 482.9s
+Epoch 026/50 | D: -8061.2987 | G: +3415.9216 | Time: 479.4s
+Epoch 027/50 | D: -8922.8110 | G: +3830.3493 | Time: 479.6s
+Epoch 028/50 | D: -9820.3231 | G: +4270.3031 | Time: 479.5s
+Epoch 029/50 | D: -10743.6748 | G: +4730.6043 | Time: 478.6s
+Epoch 030/50 | D: -11701.5051 | G: +5209.8479 | Time: 483.4s
+      FID=376.13 | IS=1.760±0.041 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch030.png
+Epoch 031/50 | D: -12694.5151 | G: +5708.7865 | Time: 479.9s
+Epoch 032/50 | D: -13674.6805 | G: +6222.4384 | Time: 478.6s
+Epoch 033/50 | D: -14100.8633 | G: +6632.1634 | Time: 478.8s
+Epoch 034/50 | D: -14549.5246 | G: +6940.1142 | Time: 478.5s
+Epoch 035/50 | D: -15331.4672 | G: +7246.0899 | Time: 478.4s
+Epoch 036/50 | D: -13132.1397 | G: +7549.8644 | Time: 478.6s
+Epoch 037/50 | D: -9700.5779 | G: +7721.1389 | Time: 481.3s
+Epoch 038/50 | D: -14940.0459 | G: +7938.7785 | Time: 482.3s
+Epoch 039/50 | D: -16094.3283 | G: +8175.1704 | Time: 483.2s
+Epoch 040/50 | D: -18907.6686 | G: +8518.2908 | Time: 484.7s
+      FID=384.38 | IS=1.408±0.029 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch040.png
+Epoch 041/50 | D: -20347.9115 | G: +9096.0243 | Time: 484.1s
+Epoch 042/50 | D: -21173.9622 | G: +9533.4527 | Time: 483.8s
+Epoch 043/50 | D: -22596.2822 | G: +10016.8108 | Time: 485.8s
+Epoch 044/50 | D: -24202.8855 | G: +10650.5593 | Time: 485.3s
+Epoch 045/50 | D: -25650.0023 | G: +11345.8648 | Time: 482.6s
+Epoch 046/50 | D: -27090.4904 | G: +12060.0410 | Time: 482.6s
+Epoch 047/50 | D: -28569.5985 | G: +12795.6945 | Time: 482.8s
+Epoch 048/50 | D: -30081.2630 | G: +13551.0326 | Time: 480.7s
+Epoch 049/50 | D: -31623.0507 | G: +14326.4491 | Time: 483.0s
+Epoch 050/50 | D: -33195.0620 | G: +15119.2761 | Time: 483.2s
+      FID=432.16 | IS=1.719±0.055 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_fashionmnist_epoch050.png
+
+Done. Results in: ./results/checkpoints/patchqgan_fashionmnist
+>>> [patchqgan / fashionmnist] done: Sat Jun 27 06:38:12 -03 2026
+
+>>> [patchqgan / mnist] started: Sat Jun 27 06:38:12 -03 2026
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Dataset: mnist | Patch QGAN | Epochs: 50 | Train subset: 5000
+Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -31.2472 | G: +10.0946 | Time: 483.1s
+Epoch 002/50 | D: -4.7093 | G: +0.5882 | Time: 484.4s
+Epoch 003/50 | D: -11.1399 | G: -0.7708 | Time: 486.3s
+Epoch 004/50 | D: -17.2694 | G: -3.0792 | Time: 487.6s
+Epoch 005/50 | D: -26.0087 | G: -3.3698 | Time: 483.6s
+Epoch 006/50 | D: -55.6097 | G: -3.2661 | Time: 481.3s
+Epoch 007/50 | D: -111.9901 | G: -2.3008 | Time: 479.2s
+Epoch 008/50 | D: -174.1386 | G: -1.0264 | Time: 480.3s
+Epoch 009/50 | D: -234.0332 | G: +1.9367 | Time: 483.7s
+Epoch 010/50 | D: -304.5111 | G: +8.2402 | Time: 484.0s
+      FID=240.29 | IS=1.512±0.098 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch010.png
+Epoch 011/50 | D: -139.5860 | G: +9.1066 | Time: 483.7s
+Epoch 012/50 | D: -71.3525 | G: -5.4091 | Time: 484.2s
+Epoch 013/50 | D: -105.2465 | G: -14.3832 | Time: 485.3s
+Epoch 014/50 | D: -141.3713 | G: -14.5193 | Time: 483.5s
+Epoch 015/50 | D: -170.9672 | G: -16.8941 | Time: 481.7s
+Epoch 016/50 | D: -205.0037 | G: -15.3664 | Time: 481.2s
+Epoch 017/50 | D: -236.2019 | G: -15.3087 | Time: 480.8s
+Epoch 018/50 | D: -252.0485 | G: -11.3241 | Time: 480.4s
+Epoch 019/50 | D: -427.4205 | G: -0.7785 | Time: 480.0s
+Epoch 020/50 | D: -321.0305 | G: -21.3183 | Time: 480.7s
+      FID=190.46 | IS=1.649±0.064 | P=0.002 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch020.png
+Epoch 021/50 | D: -378.1847 | G: -8.6635 | Time: 483.4s
+Epoch 022/50 | D: -396.8316 | G: -14.7968 | Time: 481.9s
+Epoch 023/50 | D: -455.4830 | G: -9.2512 | Time: 481.7s
+Epoch 024/50 | D: -488.0170 | G: -9.3235 | Time: 481.7s
+Epoch 025/50 | D: -526.1567 | G: -8.6883 | Time: 486.3s
+Epoch 026/50 | D: -554.9371 | G: -1.5419 | Time: 483.1s
+Epoch 027/50 | D: -593.9957 | G: +7.7900 | Time: 486.6s
+Epoch 028/50 | D: -620.7954 | G: +7.7752 | Time: 484.4s
+Epoch 029/50 | D: -661.8962 | G: +15.5133 | Time: 484.0s
+Epoch 030/50 | D: -713.3483 | G: +27.9389 | Time: 487.9s
+      FID=176.30 | IS=1.644±0.079 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch030.png
+Epoch 031/50 | D: -753.9457 | G: +42.4801 | Time: 484.6s
+Epoch 032/50 | D: -794.7357 | G: +34.9966 | Time: 481.6s
+Epoch 033/50 | D: -846.9215 | G: +54.6870 | Time: 481.9s
+Epoch 034/50 | D: -872.1533 | G: +70.7569 | Time: 482.9s
+Epoch 035/50 | D: -894.7294 | G: +69.6996 | Time: 481.6s
+Epoch 036/50 | D: -968.5104 | G: +93.6824 | Time: 481.4s
+Epoch 037/50 | D: -1001.0856 | G: +116.4316 | Time: 486.8s
+Epoch 038/50 | D: -1059.8250 | G: +117.8589 | Time: 487.4s
+Epoch 039/50 | D: -1104.6921 | G: +141.5808 | Time: 487.0s
+Epoch 040/50 | D: -1200.5228 | G: +152.1286 | Time: 486.3s
+      FID=164.75 | IS=1.607±0.089 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch040.png
+Epoch 041/50 | D: -1256.8417 | G: +181.6950 | Time: 486.2s
+Epoch 042/50 | D: -1282.8843 | G: +197.1831 | Time: 484.9s
+Epoch 043/50 | D: -1344.1795 | G: +229.9355 | Time: 486.2s
+Epoch 044/50 | D: -1421.6774 | G: +240.0008 | Time: 481.9s
+Epoch 045/50 | D: -1488.6880 | G: +252.3685 | Time: 526.5s
+Epoch 046/50 | D: -1565.6791 | G: +277.6852 | Time: 485.5s
+Epoch 047/50 | D: -1632.8692 | G: +296.7178 | Time: 483.6s
+Epoch 048/50 | D: -1761.0405 | G: +336.5899 | Time: 492.2s
+Epoch 049/50 | D: -1781.0055 | G: +357.3831 | Time: 484.7s
+Epoch 050/50 | D: -1802.7356 | G: +399.0406 | Time: 491.0s
+      FID=163.59 | IS=1.705±0.096 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_mnist_epoch050.png
+
+Done. Results in: ./results/checkpoints/patchqgan_mnist
+>>> [patchqgan / mnist] done: Sat Jun 27 15:05:49 -03 2026
+
+>>> [patchqgan / breastmnist] started: Sat Jun 27 15:05:49 -03 2026
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Dataset: breastmnist | Patch QGAN | Epochs: 50 | Train subset: 5000
+Classes: 2 | Batches/epoch: 18
+Epoch 001/50 | D: -13.4840 | G: +6.6107 | Time: 54.7s
+Epoch 002/50 | D: -23.7041 | G: +10.6341 | Time: 53.2s
+Epoch 003/50 | D: -26.0463 | G: +11.3091 | Time: 53.2s
+Epoch 004/50 | D: -31.7527 | G: +10.8600 | Time: 53.2s
+Epoch 005/50 | D: -38.5704 | G: +8.6210 | Time: 53.3s
+Epoch 006/50 | D: -48.0959 | G: +8.0317 | Time: 53.2s
+Epoch 007/50 | D: -46.3757 | G: +5.9902 | Time: 52.8s
+Epoch 008/50 | D: -48.1087 | G: +4.7492 | Time: 53.1s
+Epoch 009/50 | D: -46.6697 | G: +3.4102 | Time: 53.1s
+Epoch 010/50 | D: -35.7275 | G: +2.7083 | Time: 53.3s
+      FID=471.75 | IS=2.142±0.074 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_breastmnist_epoch010.png
+Epoch 011/50 | D: -18.4793 | G: +3.9812 | Time: 53.1s
+Epoch 012/50 | D: -48.5131 | G: +2.9842 | Time: 53.1s
+Epoch 013/50 | D: -55.9436 | G: +2.9042 | Time: 53.1s
+Epoch 014/50 | D: -80.1467 | G: +1.6587 | Time: 53.1s
+Epoch 015/50 | D: +17.8275 | G: +1.0508 | Time: 53.0s
+Epoch 016/50 | D: -69.4792 | G: +1.8530 | Time: 53.1s
+Epoch 017/50 | D: -104.2448 | G: +4.0048 | Time: 53.1s
+Epoch 018/50 | D: -12.1815 | G: +3.7106 | Time: 53.6s
+Epoch 019/50 | D: -16.6255 | G: +4.6234 | Time: 53.5s
+Epoch 020/50 | D: -106.8475 | G: +5.7056 | Time: 53.2s
+      FID=342.71 | IS=1.856±0.078 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_breastmnist_epoch020.png
+Epoch 021/50 | D: -122.7049 | G: +4.6050 | Time: 53.4s
+Epoch 022/50 | D: -135.3273 | G: +4.4712 | Time: 53.5s
+Epoch 023/50 | D: -145.2271 | G: +5.5337 | Time: 53.6s
+Epoch 024/50 | D: -164.0040 | G: +8.6277 | Time: 53.5s
+Epoch 025/50 | D: -170.9071 | G: +9.4140 | Time: 53.4s
+Epoch 026/50 | D: -183.4948 | G: +11.7923 | Time: 53.2s
+Epoch 027/50 | D: -195.8442 | G: +13.3151 | Time: 53.1s
+Epoch 028/50 | D: -212.2995 | G: +17.1928 | Time: 53.0s
+Epoch 029/50 | D: -225.3413 | G: +20.4555 | Time: 53.2s
+Epoch 030/50 | D: -238.3694 | G: +26.0594 | Time: 53.0s
+      FID=288.24 | IS=1.504±0.043 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_breastmnist_epoch030.png
+Epoch 031/50 | D: -261.9195 | G: +30.7311 | Time: 52.8s
+Epoch 032/50 | D: +21136.2617 | G: +40.7775 | Time: 53.2s
+Epoch 033/50 | D: -150.8595 | G: +40.8522 | Time: 53.2s
+Epoch 034/50 | D: +54.2269 | G: +32.6990 | Time: 53.1s
+Epoch 035/50 | D: -229.6025 | G: +37.6365 | Time: 53.1s
+Epoch 036/50 | D: -293.9178 | G: +48.2703 | Time: 53.1s
+Epoch 037/50 | D: -262.7371 | G: +62.6715 | Time: 53.0s
+Epoch 038/50 | D: -336.7552 | G: +71.4580 | Time: 53.2s
+Epoch 039/50 | D: -371.7557 | G: +78.5574 | Time: 53.1s
+Epoch 040/50 | D: -405.4239 | G: +95.8796 | Time: 52.9s
+      FID=471.20 | IS=1.515±0.046 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_breastmnist_epoch040.png
+Epoch 041/50 | D: +32790.8015 | G: +113.6866 | Time: 53.3s
+Epoch 042/50 | D: +16579.0291 | G: +115.5234 | Time: 53.3s
+Epoch 043/50 | D: -91.7732 | G: +113.7280 | Time: 53.1s
+Epoch 044/50 | D: +2780.6326 | G: +112.1559 | Time: 53.3s
+Epoch 045/50 | D: -69.4959 | G: +116.8426 | Time: 53.2s
+Epoch 046/50 | D: -262.5888 | G: +117.9166 | Time: 53.2s
+Epoch 047/50 | D: -471.3299 | G: +139.0243 | Time: 53.1s
+Epoch 048/50 | D: -413.9155 | G: +160.4389 | Time: 53.1s
+Epoch 049/50 | D: -531.9971 | G: +170.6937 | Time: 53.2s
+Epoch 050/50 | D: -558.4462 | G: +182.1894 | Time: 53.1s
+      FID=513.07 | IS=1.376±0.038 | P=0.000 R=0.000
+  Saved: ./results/images/patchqgan_breastmnist_epoch050.png
+
+Done. Results in: ./results/checkpoints/patchqgan_breastmnist
+>>> [patchqgan / breastmnist] done: Sat Jun 27 17:25:16 -03 2026
+
+=== All Patch QGAN done: Sat Jun 27 17:25:16 -03 2026 ===

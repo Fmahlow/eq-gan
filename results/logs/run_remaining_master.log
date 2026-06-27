@@ -1,0 +1,162 @@
+=== run_remaining started: Thu Jun 25 16:52:31 -03 2026 ===
+
+>>> [mnist / no_entanglement] started: Thu Jun 25 16:52:31 -03 2026
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Device: cuda
+Dataset: mnist | Mode: no_entanglement | Epochs: 50 | Train subset: 5000
+Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -15.9193 | G: +9.2272 | GP: 0.2998 | Time: 252.0s
+Epoch 002/50 | D: -11.9973 | G: +6.7046 | GP: 0.2109 | Time: 258.6s
+Epoch 003/50 | D: -11.4915 | G: +10.1319 | GP: 0.1773 | Time: 264.2s
+Epoch 004/50 | D: -12.0118 | G: +15.9911 | GP: 0.1837 | Time: 276.4s
+Epoch 005/50 | D: -13.2251 | G: +20.7933 | GP: 0.2005 | Time: 267.7s
+Epoch 006/50 | D: -13.7443 | G: +23.0603 | GP: 0.2108 | Time: 252.6s
+Epoch 007/50 | D: -13.8781 | G: +32.6298 | GP: 0.2107 | Time: 253.0s
+Epoch 008/50 | D: -15.8831 | G: +48.6449 | GP: 0.2073 | Time: 243.5s
+Epoch 009/50 | D: -16.9949 | G: +45.5180 | GP: 0.1992 | Time: 244.0s
+Epoch 010/50 | D: -15.5943 | G: +61.8440 | GP: 0.1967 | Time: 246.2s
+    FID=-803469022129495137770981046170581301261101496891396417650688.00 | IS=2.063±0.194 | P=0.004 R=0.001
+  Saved: ./results/figures/mnist_no_entanglement/samples_epoch010.png
+  → FID @ epoch 10: -803469022129495137770981046170581301261101496891396417650688.00
+Epoch 011/50 | D: -17.6806 | G: +59.1259 | GP: 0.1956 | Time: 245.9s
+Epoch 012/50 | D: -18.6291 | G: +59.2417 | GP: 0.1826 | Time: 245.2s
+Epoch 013/50 | D: -17.3860 | G: +64.1619 | GP: 0.1580 | Time: 246.1s
+Epoch 014/50 | D: -16.7348 | G: +61.4564 | GP: 0.1301 | Time: 246.9s
+Epoch 015/50 | D: -14.5881 | G: +83.8171 | GP: 0.0958 | Time: 245.7s
+Epoch 016/50 | D: -18.3935 | G: +90.5626 | GP: 0.0778 | Time: 245.0s
+Epoch 017/50 | D: -20.1565 | G: +92.3844 | GP: 0.0618 | Time: 246.7s
+Epoch 018/50 | D: -17.2096 | G: +143.3341 | GP: 0.0450 | Time: 254.8s
+Epoch 019/50 | D: -16.7305 | G: +159.1090 | GP: 0.0413 | Time: 253.1s
+Epoch 020/50 | D: -19.0096 | G: +142.5419 | GP: 0.0340 | Time: 244.9s
+    FID=-526795342172649295060681790582918781868941573250613248.00 | IS=1.782±0.212 | P=0.100 R=0.000
+  Saved: ./results/figures/mnist_no_entanglement/samples_epoch020.png
+  → FID @ epoch 20: -526795342172649295060681790582918781868941573250613248.00
+Epoch 021/50 | D: -18.4399 | G: +172.7081 | GP: 0.0317 | Time: 242.6s
+Epoch 022/50 | D: -22.7600 | G: +158.0859 | GP: 0.0343 | Time: 244.6s
+Epoch 023/50 | D: -25.8528 | G: +105.3653 | GP: 0.0355 | Time: 244.4s
+Epoch 024/50 | D: -23.5524 | G: +139.5985 | GP: 0.0283 | Time: 244.0s
+Epoch 025/50 | D: -26.7904 | G: +172.3582 | GP: 0.0280 | Time: 244.6s
+Epoch 026/50 | D: -25.8978 | G: +139.9681 | GP: 0.0250 | Time: 245.8s
+Epoch 027/50 | D: -32.5026 | G: +188.9645 | GP: 0.0245 | Time: 244.6s
+Epoch 028/50 | D: -29.2075 | G: +179.2989 | GP: 0.0282 | Time: 245.4s
+Epoch 029/50 | D: -33.2435 | G: +118.2217 | GP: 0.0298 | Time: 246.8s
+Epoch 030/50 | D: -28.6256 | G: +159.3929 | GP: 0.0244 | Time: 247.1s
+    FID=47.93 | IS=1.812±0.317 | P=0.137 R=0.000
+  Saved: ./results/figures/mnist_no_entanglement/samples_epoch030.png
+  → FID @ epoch 30: 47.93
+Epoch 031/50 | D: -31.6829 | G: +225.8873 | GP: 0.0259 | Time: 244.5s
+Epoch 032/50 | D: -37.3701 | G: +259.8455 | GP: 0.0202 | Time: 245.3s
+Epoch 033/50 | D: -43.5736 | G: +267.3257 | GP: 0.0254 | Time: 246.0s
+Epoch 034/50 | D: -44.0561 | G: +234.9466 | GP: 0.0300 | Time: 245.2s
+Epoch 035/50 | D: -44.8918 | G: +236.3077 | GP: 0.0301 | Time: 245.3s
+Epoch 036/50 | D: -45.2050 | G: +217.4505 | GP: 0.0304 | Time: 245.1s
+Epoch 037/50 | D: -44.6409 | G: +225.7780 | GP: 0.0287 | Time: 245.1s
+Epoch 038/50 | D: -37.7186 | G: +190.3173 | GP: 0.0296 | Time: 244.5s
+Epoch 039/50 | D: -56.2311 | G: +220.0141 | GP: 0.0250 | Time: 244.4s
+Epoch 040/50 | D: -41.5506 | G: +236.5478 | GP: 0.0265 | Time: 247.5s
+    FID=1636881833810611268388127012642236982014644448133120.00 | IS=1.735±0.180 | P=0.084 R=0.000
+  Saved: ./results/figures/mnist_no_entanglement/samples_epoch040.png
+  → FID @ epoch 40: 1636881833810611268388127012642236982014644448133120.00
+Epoch 041/50 | D: -52.3765 | G: +169.6545 | GP: 0.0275 | Time: 245.4s
+Epoch 042/50 | D: -57.2511 | G: +288.3863 | GP: 0.0285 | Time: 245.6s
+Epoch 043/50 | D: -31.6228 | G: +271.5418 | GP: 0.0264 | Time: 244.6s
+Epoch 044/50 | D: -64.4450 | G: +239.8933 | GP: 0.0262 | Time: 245.1s
+Epoch 045/50 | D: -53.2724 | G: +318.2139 | GP: 0.0295 | Time: 244.4s
+Epoch 046/50 | D: -41.0168 | G: +289.8937 | GP: 0.0283 | Time: 245.6s
+Epoch 047/50 | D: -56.5819 | G: +348.0902 | GP: 0.0268 | Time: 245.3s
+Epoch 048/50 | D: -49.2936 | G: +321.5486 | GP: 0.0247 | Time: 247.6s
+Epoch 049/50 | D: -51.4884 | G: +319.6338 | GP: 0.0234 | Time: 246.2s
+Epoch 050/50 | D: -69.6463 | G: +333.9316 | GP: 0.0285 | Time: 245.8s
+    FID=7482888383134222941202866343507369060638374620037120.00 | IS=1.740±0.180 | P=0.059 R=0.001
+  Saved: ./results/figures/mnist_no_entanglement/samples_epoch050.png
+  → FID @ epoch 50: 7482888383134222941202866343507369060638374620037120.00
+  Saved: ./results/figures/mnist_no_entanglement/loss_curves.png
+  Saved: ./results/figures/mnist_no_entanglement/fid_curve.png
+
+Done. Results in: ./results/checkpoints/mnist_no_entanglement
+>>> [mnist / no_entanglement] done: Thu Jun 25 22:06:00 -03 2026
+
+>>> [patchqgan / fashionmnist] started: Thu Jun 25 22:06:00 -03 2026
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Dataset: fashionmnist | Patch QGAN | Epochs: 50 | Train subset: 5000
+Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -16.3423 | G: +5.0182 | Time: 484.3s
+Epoch 002/50 | D: -15.4526 | G: +0.3253 | Time: 481.0s
+Epoch 003/50 | D: -14.7708 | G: -1.0439 | Time: 479.1s
+Epoch 004/50 | D: -14.7091 | G: -1.7580 | Time: 480.5s
+Epoch 005/50 | D: -14.4319 | G: -2.0764 | Time: 482.8s
+Epoch 006/50 | D: -14.0761 | G: -1.7112 | Time: 480.3s
+Epoch 007/50 | D: -13.0313 | G: -0.9503 | Time: 483.0s
+Epoch 008/50 | D: -11.8648 | G: -0.2782 | Time: 482.7s
+Epoch 009/50 | D: -10.7086 | G: +0.8397 | Time: 484.5s
+Epoch 010/50 | D: -9.1393 | G: +0.5621 | Time: 484.4s
+      FID=-2394524282602951341184917229922358099404279878411878400.00 | IS=1.784±0.113 | P=0.000 R=0.000
+Traceback (most recent call last):
+  File "/home/mahlow/eq-gan/experiments/run_patch_qgan.py", line 174, in <module>
+    main()
+  File "/home/mahlow/eq-gan/experiments/run_patch_qgan.py", line 170, in main
+    train(p.parse_args())
+  File "/home/mahlow/eq-gan/experiments/run_patch_qgan.py", line 145, in train
+    plot_generated_grid(
+TypeError: plot_generated_grid() got an unexpected keyword argument 'title'
+>>> [patchqgan / fashionmnist] done: Thu Jun 25 23:55:01 -03 2026
+
+>>> [patchqgan / mnist] started: Thu Jun 25 23:55:01 -03 2026
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Dataset: mnist | Patch QGAN | Epochs: 50 | Train subset: 5000
+Classes: 10 | Batches/epoch: 157
+Epoch 001/50 | D: -30.2585 | G: +14.9608 | Time: 483.4s
+Epoch 002/50 | D: -19.2550 | G: +2.9272 | Time: 479.1s
+Epoch 003/50 | D: -11.4128 | G: -1.5645 | Time: 484.4s
+Epoch 004/50 | D: -15.9477 | G: -3.4363 | Time: 482.3s
+Epoch 005/50 | D: -30.8476 | G: -2.3277 | Time: 486.3s
+Epoch 006/50 | D: -80.5838 | G: +3.5629 | Time: 500.4s
+Epoch 007/50 | D: -122.5458 | G: +6.2593 | Time: 490.7s
+Epoch 008/50 | D: -141.6606 | G: +11.7994 | Time: 482.9s
+Epoch 009/50 | D: -25.4173 | G: +3.2979 | Time: 480.1s
+Epoch 010/50 | D: -42.6308 | G: -5.2605 | Time: 482.2s
+      FID=1645504557321206042154969182557350504982735865633579863348609024.00 | IS=1.686±0.030 | P=0.000 R=0.000
+Traceback (most recent call last):
+  File "/home/mahlow/eq-gan/experiments/run_patch_qgan.py", line 174, in <module>
+    main()
+  File "/home/mahlow/eq-gan/experiments/run_patch_qgan.py", line 170, in main
+    train(p.parse_args())
+  File "/home/mahlow/eq-gan/experiments/run_patch_qgan.py", line 145, in train
+    plot_generated_grid(
+TypeError: plot_generated_grid() got an unexpected keyword argument 'title'
+>>> [patchqgan / mnist] done: Fri Jun 26 01:44:22 -03 2026
+
+>>> [patchqgan / breastmnist] started: Fri Jun 26 01:44:22 -03 2026
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Dataset: breastmnist | Patch QGAN | Epochs: 50 | Train subset: 5000
+Classes: 2 | Batches/epoch: 18
+Epoch 001/50 | D: -11.2674 | G: +4.4614 | Time: 54.6s
+Epoch 002/50 | D: -19.8739 | G: +8.1412 | Time: 53.5s
+Epoch 003/50 | D: -17.0833 | G: +5.0076 | Time: 53.3s
+Epoch 004/50 | D: -17.4231 | G: +6.0054 | Time: 53.5s
+Epoch 005/50 | D: -18.4948 | G: +4.5520 | Time: 53.3s
+Epoch 006/50 | D: -18.2370 | G: +3.7373 | Time: 53.3s
+Epoch 007/50 | D: -4.0175 | G: +4.0713 | Time: 53.2s
+Epoch 008/50 | D: -8.4462 | G: +4.7367 | Time: 53.4s
+Epoch 009/50 | D: -13.2533 | G: +2.1386 | Time: 53.5s
+Epoch 010/50 | D: -20.7328 | G: +0.6052 | Time: 53.5s
+      FID=-22311154536351415664950065669498701760068984214629038771719264229555985738588780212905140484655302678803382272.00 | IS=1.757±0.090 | P=0.000 R=0.000
+Traceback (most recent call last):
+  File "/home/mahlow/eq-gan/experiments/run_patch_qgan.py", line 174, in <module>
+    main()
+  File "/home/mahlow/eq-gan/experiments/run_patch_qgan.py", line 170, in main
+    train(p.parse_args())
+  File "/home/mahlow/eq-gan/experiments/run_patch_qgan.py", line 145, in train
+    plot_generated_grid(
+TypeError: plot_generated_grid() got an unexpected keyword argument 'title'
+>>> [patchqgan / breastmnist] done: Fri Jun 26 02:14:05 -03 2026
+
+=== All remaining experiments done: Fri Jun 26 02:14:05 -03 2026 ===

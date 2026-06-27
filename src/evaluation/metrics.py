@@ -66,12 +66,17 @@ def compute_fid(real_features: np.ndarray, fake_features: np.ndarray) -> float:
     mu2, sigma2 = fake_features.mean(0), np.cov(fake_features, rowvar=False)
 
     diff = mu1 - mu2
-    covmean, _ = linalg.sqrtm(sigma1 @ sigma2, disp=False)
+    eps = 1e-6
+    offset = np.eye(sigma1.shape[0]) * eps
+    covmean, _ = linalg.sqrtm((sigma1 + offset) @ (sigma2 + offset), disp=False)
     if np.iscomplexobj(covmean):
-        covmean = covmean.real
+        if not np.allclose(np.diagonal(covmean).imag, 0, atol=1e-3):
+            covmean = covmean.real
+        else:
+            covmean = covmean.real
 
     fid = diff @ diff + np.trace(sigma1 + sigma2 - 2 * covmean)
-    return float(fid)
+    return float(np.real(fid))
 
 
 # ---------------------------------------------------------------------------
