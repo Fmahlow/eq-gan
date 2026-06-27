@@ -14,6 +14,7 @@
 \usepackage{braket}  % Dirac notation
 
 \hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, urlcolor=blue}
+\graphicspath{{../../results/figures/}}
 
 \title{\textbf{EQ-GAN: Investigating Quantum Entanglement as a Style Injection\\
 Mechanism in Hybrid Generative Adversarial Networks}}
@@ -194,6 +195,19 @@ injection mechanism.
 \label{sec:method}
 
 \subsection{Overview}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{fig0_architecture.pdf}
+  \caption{EQ-GAN architecture. Latent noise $\mathbf{z}$ and class label $\mathbf{c}$
+    are encoded into angle parameters by classical MLPs. The quantum circuit operates on
+    8 qubits split into a content register $\mathcal{C}$ ($q_0$--$q_5$) and style register
+    $\mathcal{S}$ ($q_6,q_7$), connected by an explicit CNOT entanglement core $U_E$.
+    Pauli-$Z$ expectation values on $\mathcal{C}$ are decoded by a classical ConvTranspose
+    network into a $28\times28$ image. A conditional CNN discriminator provides the
+    WGAN-GP training signal.}
+  \label{fig:architecture}
+\end{figure*}
 
 EQ-GAN is a conditional hybrid QGAN with five components: (1) a
 classical style encoder mapping class labels to quantum style inputs,
@@ -480,6 +494,25 @@ at 28$\times$28 resolution.
 
 \subsection{Ablation Study: Does Entanglement Help?}
 
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.92\textwidth]{fig1_fid_curves.pdf}
+  \caption{FID over training epochs for EQ-GAN variants and classical baselines on
+    FashionMNIST. EQ-GAN$_\text{no-ent}$ (orange) consistently achieves lower FID
+    than the full EQ-GAN (blue) at every checkpoint, confirming that the entanglement
+    core does not improve generation quality. Classical baselines (DCGAN, WGAN-GP)
+    are shown for reference.}
+  \label{fig:fid_curves}
+\end{figure*}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig2_ablation_bars.pdf}
+  \caption{FID (left) and IS (right) at epoch 50 for all EQ-GAN ablation variants
+    on FashionMNIST. Lower FID and higher IS indicate better generation quality.}
+  \label{fig:ablation_bars}
+\end{figure}
+
 The central empirical finding of this paper is a \emph{negative result}: the
 no-entanglement variant (EQ-GAN$_\text{no-ent}$) consistently outperforms the
 full EQ-GAN across all training checkpoints on FashionMNIST, with a final FID
@@ -512,6 +545,26 @@ classical reference, not as a direct competitor but as an indication of the
 performance gap that near-term quantum hardware architectures face.
 
 \subsection{Quantum Characterization}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig6_expressibility.pdf}
+  \caption{Circuit expressibility ($\mathcal{E}$, KL divergence from Haar) for each
+    circuit variant. Lower values indicate higher expressibility.
+    EQ-GAN$_\text{no-ent}$ is 8$\times$ more expressive than the full EQ-GAN,
+    yet achieves better generative quality—consistent with the barren plateau hypothesis.}
+  \label{fig:expressibility}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{fig7_entanglement_entropy.pdf}
+  \caption{Von Neumann entanglement entropy $S(\rho_\mathcal{S})$ estimated from
+    random parameter samples at different circuit stages. The encoding layers alone
+    generate near-maximum cross-register entanglement, leaving minimal headroom for
+    the explicit entanglement core.}
+  \label{fig:entropy}
+\end{figure}
 
 \paragraph{Expressibility.}
 Table~\ref{tab:expressibility} reports the KL divergence $\mathcal{E}$ from
@@ -611,6 +664,17 @@ On actual quantum processors, gate infidelity and decoherence would further
 degrade the entanglement structure, likely amplifying the observed degradation.
 
 \subsection{Qualitative Results}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{fig8_samples.pdf}
+  \caption{Generated samples on FashionMNIST at epochs 10, 30, and 50 for
+    EQ-GAN (full), EQ-GAN$_\text{no-ent}$, and EQ-GAN$_\text{no-style}$.
+    All models produce structurally recognizable but blurry outputs;
+    the no-entanglement variant shows marginally clearer class boundaries,
+    consistent with its lower FID.}
+  \label{fig:samples}
+\end{figure*}
 
 Figure~\ref{fig:samples} shows generated samples from EQ-GAN and
 EQ-GAN$_\text{no-ent}$ on FashionMNIST at epochs 10, 30, and 50.
