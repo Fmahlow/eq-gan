@@ -1,0 +1,14 @@
+{
+  "dataset": "breastmnist",
+  "mode": "no_style",
+  "noise_dim": 64,
+  "n_classes": 2,
+  "img_channels": 1,
+  "lr_g": 0.0001,
+  "lr_d": 0.0001,
+  "n_critic": 3,
+  "lambda_gp": 10.0,
+  "epochs": 50,
+  "batch_size": 32,
+  "n_train": 10000
+}

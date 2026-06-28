@@ -1,0 +1,76 @@
+/home/mahlow/anaconda3/envs/my_env/lib/python3.11/site-packages/pennylane/__init__.py:212: PennyLaneDeprecationWarning: PennyLane v0.44 has dropped maintainence support for NumPy < 2.0.0. You have version 1.26.4 installed. Future versions of PennyLane will not work with NumPy<2.0. Please consider upgrading NumPy using `python -m pip install numpy --upgrade`. 
+  warnings.warn(
+Device: cuda
+Dataset: breastmnist | Mode: no_entanglement | Epochs: 50 | Train subset: 10000
+Using downloaded and verified file: ./data/breastmnist.npz
+Using downloaded and verified file: ./data/breastmnist.npz
+Classes: 2 | Batches/epoch: 18
+Epoch 001/50 | D: -14.8882 | G: +6.9052 | GP: 0.1269 | Time: 36.1s
+Epoch 002/50 | D: -25.4921 | G: +11.8562 | GP: 0.2902 | Time: 33.8s
+Epoch 003/50 | D: -28.0283 | G: +10.8656 | GP: 0.3687 | Time: 33.9s
+Epoch 004/50 | D: -34.0547 | G: +9.3435 | GP: 0.2975 | Time: 33.8s
+Epoch 005/50 | D: -35.7246 | G: +7.9067 | GP: 0.2657 | Time: 33.2s
+Epoch 006/50 | D: -39.8915 | G: +4.6972 | GP: 0.2360 | Time: 32.8s
+Epoch 007/50 | D: -44.2096 | G: +6.2822 | GP: 0.1986 | Time: 33.0s
+Epoch 008/50 | D: -38.2854 | G: +4.0769 | GP: 0.1890 | Time: 33.0s
+Epoch 009/50 | D: -50.4245 | G: +3.6396 | GP: 0.1499 | Time: 32.3s
+Epoch 010/50 | D: -56.5114 | G: +4.7805 | GP: 0.0746 | Time: 32.7s
+    FID=313.87 | IS=1.763±0.027 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_no_entanglement/samples_epoch010.png
+  → FID @ epoch 10: 313.87
+Epoch 011/50 | D: -63.5369 | G: +7.8934 | GP: 0.0653 | Time: 27.9s
+Epoch 012/50 | D: -65.1494 | G: +8.1722 | GP: 0.0669 | Time: 27.1s
+Epoch 013/50 | D: -63.7002 | G: +11.2056 | GP: 0.0629 | Time: 27.1s
+Epoch 014/50 | D: -55.7434 | G: +13.1387 | GP: 0.0702 | Time: 27.1s
+Epoch 015/50 | D: -82.4769 | G: +17.0951 | GP: 0.0597 | Time: 27.2s
+Epoch 016/50 | D: -92.2505 | G: -0.1989 | GP: 0.0605 | Time: 27.1s
+Epoch 017/50 | D: -102.7792 | G: -5.1557 | GP: 0.0578 | Time: 27.2s
+Epoch 018/50 | D: -80.7964 | G: -1.3664 | GP: 0.0640 | Time: 27.0s
+Epoch 019/50 | D: -105.2704 | G: +0.0140 | GP: 0.0654 | Time: 27.2s
+Epoch 020/50 | D: -115.9576 | G: +11.6341 | GP: 0.0616 | Time: 27.1s
+    FID=302.21 | IS=1.667±0.026 | P=0.000 R=0.000
+  Saved: ./results/figures/breastmnist_no_entanglement/samples_epoch020.png
+  → FID @ epoch 20: 302.21
+Epoch 021/50 | D: -108.2205 | G: +19.5422 | GP: 0.0636 | Time: 27.2s
+Epoch 022/50 | D: -110.9047 | G: +16.7444 | GP: 0.0567 | Time: 27.0s
+Epoch 023/50 | D: -133.6150 | G: +17.2095 | GP: 0.0501 | Time: 27.2s
+Epoch 024/50 | D: -132.1334 | G: +4.4411 | GP: 0.0548 | Time: 27.0s
+Epoch 025/50 | D: -130.7581 | G: -3.7380 | GP: 0.0512 | Time: 27.3s
+Epoch 026/50 | D: -138.8447 | G: +6.3709 | GP: 0.0605 | Time: 27.0s
+Epoch 027/50 | D: -145.9453 | G: -32.7285 | GP: 0.0559 | Time: 27.2s
+Epoch 028/50 | D: -159.5859 | G: +3.3133 | GP: 0.0511 | Time: 27.3s
+Epoch 029/50 | D: -161.3744 | G: -7.1752 | GP: 0.0568 | Time: 27.1s
+Epoch 030/50 | D: -172.7930 | G: +11.7116 | GP: 0.0476 | Time: 27.5s
+    FID=210.53 | IS=1.556±0.028 | P=0.007 R=0.000
+  Saved: ./results/figures/breastmnist_no_entanglement/samples_epoch030.png
+  → FID @ epoch 30: 210.53
+Epoch 031/50 | D: -144.1866 | G: +51.8649 | GP: 0.0487 | Time: 33.2s
+Epoch 032/50 | D: -184.9403 | G: +5.9121 | GP: 0.0575 | Time: 30.7s
+Epoch 033/50 | D: -224.6899 | G: +18.0338 | GP: 0.0424 | Time: 27.7s
+Epoch 034/50 | D: -211.4677 | G: +24.3452 | GP: 0.0476 | Time: 27.1s
+Epoch 035/50 | D: -200.1969 | G: -2.5414 | GP: 0.0512 | Time: 27.4s
+Epoch 036/50 | D: -231.8255 | G: -30.3020 | GP: 0.0470 | Time: 27.3s
+Epoch 037/50 | D: -254.9236 | G: -14.1158 | GP: 0.0484 | Time: 27.3s
+Epoch 038/50 | D: -267.4505 | G: +5.6952 | GP: 0.0497 | Time: 27.1s
+Epoch 039/50 | D: -270.8538 | G: -26.0261 | GP: 0.0475 | Time: 27.0s
+Epoch 040/50 | D: -234.4264 | G: +26.4161 | GP: 0.0501 | Time: 29.9s
+    FID=269.57 | IS=1.558±0.076 | P=0.008 R=0.000
+  Saved: ./results/figures/breastmnist_no_entanglement/samples_epoch040.png
+  → FID @ epoch 40: 269.57
+Epoch 041/50 | D: -217.8506 | G: +4.9158 | GP: 0.0348 | Time: 27.0s
+Epoch 042/50 | D: -304.5450 | G: +22.5823 | GP: 0.0483 | Time: 27.2s
+Epoch 043/50 | D: -285.2806 | G: +27.5503 | GP: 0.0519 | Time: 27.2s
+Epoch 044/50 | D: -330.0714 | G: +47.4134 | GP: 0.0494 | Time: 27.1s
+Epoch 045/50 | D: -287.3482 | G: +57.1132 | GP: 0.0516 | Time: 27.3s
+Epoch 046/50 | D: -273.5715 | G: +8.7827 | GP: 0.0402 | Time: 27.1s
+Epoch 047/50 | D: -344.8209 | G: -0.4305 | GP: 0.0491 | Time: 32.8s
+Epoch 048/50 | D: -336.6753 | G: -0.3519 | GP: 0.0416 | Time: 28.2s
+Epoch 049/50 | D: -335.1091 | G: -5.8230 | GP: 0.0481 | Time: 27.0s
+Epoch 050/50 | D: -359.5837 | G: +33.9042 | GP: 0.0533 | Time: 27.5s
+    FID=237.70 | IS=1.741±0.032 | P=0.035 R=0.000
+  Saved: ./results/figures/breastmnist_no_entanglement/samples_epoch050.png
+  → FID @ epoch 50: 237.70
+  Saved: ./results/figures/breastmnist_no_entanglement/loss_curves.png
+  Saved: ./results/figures/breastmnist_no_entanglement/fid_curve.png
+
+Done. Results in: ./results/checkpoints/breastmnist_no_entanglement

@@ -1,0 +1,872 @@
+[2026-06-27 20:58:12] === monitor_and_complete.sh started ===
+[2026-06-27 20:58:12] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-27 20:58:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:00:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:02:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:04:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:06:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:08:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:10:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:12:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:14:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:16:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:18:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:20:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:22:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:24:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:26:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:28:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:30:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:32:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:34:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:36:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:38:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:40:12] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:42:13] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:44:13] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:46:13] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:48:13] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:50:13] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:52:13] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:54:13] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:56:13] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 21:58:28] === monitor_and_complete.sh started ===
+[2026-06-27 21:58:28] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-27 21:58:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:00:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:02:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:04:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:06:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:08:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:10:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:12:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:14:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:16:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:18:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:20:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:22:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:24:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:26:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:28:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:30:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:32:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:34:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:36:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:38:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:40:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:42:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:44:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:46:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:48:28] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:50:29] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:52:29] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:54:29] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:56:29] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 22:59:15] === monitor_and_complete.sh started ===
+[2026-06-27 22:59:15] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-27 22:59:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:01:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:03:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:05:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:07:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:09:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:11:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:13:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:15:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:17:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:19:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:21:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:23:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:25:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:27:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:29:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:31:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:33:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:35:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:37:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:39:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:41:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:43:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:45:15] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:47:16] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:49:16] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:51:16] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:53:16] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:55:16] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:57:16] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-27 23:59:51] === monitor_and_complete.sh started ===
+[2026-06-27 23:59:51] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-27 23:59:51] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:01:51] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:03:51] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:05:51] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:07:51] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:09:51] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:11:52] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:13:52] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:15:52] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:17:52] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:19:52] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:21:52] Still waiting for breastmnist/no_entanglement ... sleeping 120s
+[2026-06-28 00:23:52] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 00:23:52] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 00:23:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:25:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:27:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:29:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:31:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:33:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:35:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:37:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:39:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:41:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:43:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:45:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:47:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:49:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:51:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:53:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:55:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 00:57:52] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:00:07] === monitor_and_complete.sh started ===
+[2026-06-28 01:00:07] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 01:00:07] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 01:00:07] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 01:00:07] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:02:07] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:04:07] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:06:07] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:08:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:10:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:12:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:14:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:16:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:18:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:20:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:22:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:24:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:26:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:28:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:30:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:32:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:34:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:36:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:38:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:40:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:42:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:44:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:46:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:48:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:50:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:52:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:54:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:56:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 01:58:08] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:00:24] === monitor_and_complete.sh started ===
+[2026-06-28 02:00:24] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 02:00:24] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 02:00:24] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 02:00:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:02:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:04:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:06:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:08:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:10:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:12:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:14:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:16:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:18:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:20:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:22:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:24:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:26:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:28:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:30:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:32:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:34:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:36:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:38:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:40:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:42:24] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:44:25] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:46:25] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:48:25] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:50:25] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:52:25] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:54:25] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:56:25] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 02:58:25] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:00:39] === monitor_and_complete.sh started ===
+[2026-06-28 03:00:39] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 03:00:39] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 03:00:39] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 03:00:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:02:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:04:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:06:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:08:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:10:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:12:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:14:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:16:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:18:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:20:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:22:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:24:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:26:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:28:39] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:30:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:32:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:34:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:36:09] === monitor_and_complete.sh started ===
+[2026-06-28 03:36:09] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 03:36:09] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 03:36:09] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 03:36:09] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:36:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:38:09] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:38:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:40:10] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:40:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:42:10] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:42:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:44:10] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:44:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:46:10] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:46:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:48:10] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:48:40] Still waiting for breastmnist/no_style ... sleeping 120s
+[2026-06-28 03:50:10] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 03:50:10] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 03:50:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 03:50:40] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 03:50:40] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 03:50:40] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 03:52:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 03:52:40] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 03:54:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 03:54:40] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 03:56:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 03:56:40] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 03:58:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 03:58:40] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:00:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:00:59] === monitor_and_complete.sh started ===
+[2026-06-28 04:00:59] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 04:00:59] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 04:00:59] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 04:00:59] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 04:00:59] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 04:00:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:02:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:02:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:04:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:04:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:06:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:06:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:08:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:08:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:10:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:10:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:12:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:12:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:14:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:14:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:16:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:16:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:18:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:18:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:20:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:20:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:22:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:22:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:24:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:24:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:26:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:26:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:28:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:28:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:30:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:30:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:32:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:32:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:34:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:34:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:36:10] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:36:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:38:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:38:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:40:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:40:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:42:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:42:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:44:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:44:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:46:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:46:59] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:48:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:49:00] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:50:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:51:00] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:52:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:53:00] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:54:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:55:00] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:56:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:57:00] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:58:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 04:59:00] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:00:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:00:52] === monitor_and_complete.sh started ===
+[2026-06-28 05:00:52] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 05:00:52] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 05:00:52] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 05:00:52] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 05:00:52] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 05:00:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:02:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:02:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:04:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:04:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:06:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:06:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:08:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:08:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:10:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:10:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:12:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:12:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:14:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:14:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:16:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:16:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:18:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:18:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:20:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:20:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:22:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:22:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:24:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:24:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:26:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:26:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:28:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:28:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:30:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:30:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:32:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:32:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:34:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:34:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:36:11] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:36:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:38:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:38:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:40:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:40:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:42:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:42:31] === monitor_and_complete.sh started ===
+[2026-06-28 05:42:31] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 05:42:31] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 05:42:31] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 05:42:31] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 05:42:31] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 05:42:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:44:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:44:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:46:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:46:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:48:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:48:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:50:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:50:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:52:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:52:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:54:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:54:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:56:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:56:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:58:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 05:58:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:00:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:00:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:02:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:02:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:04:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:04:31] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:06:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:06:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:08:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:08:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:10:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:10:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:12:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:12:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:14:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:14:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:16:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:16:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:18:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:18:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:20:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:20:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:22:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:22:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:24:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:24:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:26:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:26:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:28:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:28:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:30:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:30:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:32:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:32:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:34:12] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:34:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:36:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:36:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:38:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:38:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:40:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:40:32] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:42:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:42:47] === monitor_and_complete.sh started ===
+[2026-06-28 06:42:47] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 06:42:47] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 06:42:47] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 06:42:47] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 06:42:47] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 06:42:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:44:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:44:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:46:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:46:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:48:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:48:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:50:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:50:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:52:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:52:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:54:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:54:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:56:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:56:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:58:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 06:58:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:00:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:00:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:02:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:02:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:04:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:04:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:06:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:06:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:08:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:08:47] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:10:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:10:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:12:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:12:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:14:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:14:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:16:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:16:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:18:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:18:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:20:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:20:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:22:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:22:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:23:38] === monitor_and_complete.sh started ===
+[2026-06-28 07:23:38] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 07:23:38] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 07:23:38] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 07:23:38] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 07:23:38] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 07:23:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:24:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:24:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:25:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:26:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:26:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:27:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:28:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:28:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:29:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:30:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:30:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:31:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:32:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:32:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:33:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:34:13] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:34:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:35:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:36:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:36:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:37:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:38:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:38:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:39:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:40:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:40:48] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:41:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:42:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:43:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:44:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:45:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:46:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:47:38] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:48:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:49:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:50:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:51:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:52:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:53:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:54:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:55:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:56:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:57:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:58:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 07:59:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:00:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:01:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:02:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:03:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:04:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:05:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:06:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:07:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:08:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:09:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:10:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:11:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:12:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:13:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:14:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:15:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:16:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:17:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:18:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:19:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:20:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:21:39] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:22:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:23:52] === monitor_and_complete.sh started ===
+[2026-06-28 08:23:52] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 08:23:52] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 08:23:52] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 08:23:52] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 08:23:52] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 08:23:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:24:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:25:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:26:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:27:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:28:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:29:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:30:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:31:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:32:14] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:33:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:34:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:35:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:36:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:37:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:38:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:39:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:40:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:41:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:42:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:43:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:44:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:45:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:46:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:47:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:48:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:49:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:50:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:51:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:52:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:53:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:54:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:55:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:56:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:57:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:58:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 08:59:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:00:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:01:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:02:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:03:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:04:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:05:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:06:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:07:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:08:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:09:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:10:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:11:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:12:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:13:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:14:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:15:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:16:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:17:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:18:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:19:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:20:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:21:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:22:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:24:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:24:23] === monitor_and_complete.sh started ===
+[2026-06-28 09:24:23] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 09:24:23] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 09:24:23] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 09:24:23] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 09:24:23] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 09:24:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:26:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:26:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:28:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:28:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:30:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:30:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:32:15] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:32:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:34:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:34:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:36:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:36:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:38:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:38:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:40:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:40:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:42:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:42:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:44:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:44:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:46:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:46:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:48:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:48:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:50:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:50:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:52:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:52:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:54:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:54:23] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:56:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:56:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:58:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 09:58:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:00:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:00:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:02:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:02:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:04:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:04:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:06:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:06:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:08:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:08:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:10:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:10:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:12:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:12:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:14:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:14:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:16:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:16:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:18:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:18:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:20:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:20:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:22:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:22:24] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:24:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:24:36] === monitor_and_complete.sh started ===
+[2026-06-28 10:24:36] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 10:24:36] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 10:24:36] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 10:24:36] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 10:24:36] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 10:24:36] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:26:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:26:36] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:28:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:28:36] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:30:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:30:36] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:32:16] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:32:36] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:34:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:34:36] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:36:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:36:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:38:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:38:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:40:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:40:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:42:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:42:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:44:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:44:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:46:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:46:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:48:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:48:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:50:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:50:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:52:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:52:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:54:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:54:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:56:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:56:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:58:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 10:58:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:00:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:00:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:02:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:02:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:04:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:04:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:06:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:06:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:08:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:08:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:10:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:10:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:12:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:12:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:14:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:14:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:16:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:16:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:18:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:18:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:20:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:20:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:22:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:22:37] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:24:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:24:52] === monitor_and_complete.sh started ===
+[2026-06-28 11:24:52] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 11:24:52] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 11:24:52] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 11:24:52] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 11:24:52] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 11:24:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:26:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:26:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:28:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:28:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:30:17] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:30:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:32:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:32:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:34:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:34:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:36:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:36:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:38:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:38:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:40:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:40:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:42:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:42:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:44:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:44:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:46:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:46:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:48:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:48:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:50:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:50:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:52:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:52:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:54:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:54:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:56:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:56:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:58:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 11:58:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:00:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:00:52] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:02:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:02:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:04:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:04:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:06:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:06:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:08:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:08:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:10:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:10:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:12:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:12:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:14:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:14:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:16:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:16:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:18:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:18:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:20:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:20:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:22:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:22:53] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:24:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:25:25] === monitor_and_complete.sh started ===
+[2026-06-28 12:25:25] Waiting for breastmnist/no_entanglement checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 12:25:25] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_entanglement/metrics_epoch050.json
+[2026-06-28 12:25:25] Waiting for breastmnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 12:25:25] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/breastmnist_no_style/metrics_epoch050.json
+[2026-06-28 12:25:25] Waiting for mnist/no_style checkpoint: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 12:25:25] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:26:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:27:25] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:28:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:29:25] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:30:18] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:31:26] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:32:19] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:33:26] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:34:19] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:35:26] Still waiting for mnist/no_style ... sleeping 120s
+[2026-06-28 12:36:19] Checkpoint found: /home/mahlow/eq-gan/results/checkpoints/mnist_no_style/metrics_epoch050.json
+[2026-06-28 12:36:19] All three experiments completed. Extracting metrics...
+[2026-06-28 12:36:19] breastmnist/no_entanglement: FID=237.69882834703108 IS=1.7406622171401978
+[2026-06-28 12:36:19] breastmnist/no_style: FID=227.96983608703246 IS=2.3097445964813232
+[2026-06-28 12:36:19] mnist/no_style: FID=163.39218221912864 IS=2.880722999572754
+[2026-06-28 12:36:19] Formatted — breast/no-ent: 237.7 / 1.74
+[2026-06-28 12:36:19] Formatted — breast/no-style: 228.0 / 2.31
+[2026-06-28 12:36:19] Formatted — mnist/no-style: 163.4 / 2.88
+[2026-06-28 12:36:19] Updating paper/src/main.tex ...
+Table updated successfully.
+[2026-06-28 12:36:19] Table update done. Regenerating figures...
+/home/mahlow/eq-gan/experiments/generate_figures.py:183: UserWarning: Tight layout not applied. The bottom and top margins cannot be made large enough to accommodate all axes decorations.
+  plt.tight_layout()
+Generating paper figures...
+Saved: ./results/figures/fig1_fid_curves.pdf
+Saved: ./results/figures/fig2_ablation_bars.pdf
+Saved: ./results/figures/fig3_cross_dataset.pdf
+Saved: ./results/figures/fig4_ablation_consistency.pdf
+Saved: ./results/figures/fig5_results_table.pdf
+
+All figures saved to ./results/figures/
+[2026-06-28 12:36:27] Figures regenerated.
+[2026-06-28 12:36:27] Recompiling paper...
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (11 pages, 684676 bytes).
+Transcript written on main.log.
+Latexmk: Found input bbl file 'main.bbl'
+Latexmk: Log file says output to 'main.pdf'
+Latexmk: Examining 'main.log'
+=== TeX engine is 'pdfTeX'
+Latexmk: Found bibliography file(s) [references.bib]
+Latexmk: All targets (main.pdf) are up-to-date
+[2026-06-28 12:36:28] Paper compiled.
+[2026-06-28 12:36:28] Committing and pushing...
