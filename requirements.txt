@@ -1,0 +1,9 @@
+torch
+torchvision
+numpy
+matplotlib
+scipy
+tqdm
+medmnist
+pennylane
+pennylane-lightning
